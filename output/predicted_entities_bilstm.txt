@@ -1,0 +1,928 @@
+0 -RRB- grammars : Method
+2D point correspondences : OtherScientificTerm
+3D articulated tree : OtherScientificTerm
+3D line : OtherScientificTerm
+3D object categorization : Task
+3D skeleton : Task
+3D viewpoint transformations : OtherScientificTerm
+ASR accuracy : Metric
+ASR system : Method
+Although hidden Markov models -LRB- HMMs -RRB- provide : Method
+Arabic : Material
+Automatic Speech Recognition -LRB- ASR -RRB- System : Method
+Background modeling : Task
+Bayes classifiers : Method
+Bayesian Network : Method
+Bayesian inference : Method
+Bayesian inference techniques : Method
+Bayesian learning algorithm : Method
+Bayesian statistics : Method
+CNN embedding : Method
+CNN models : Method
+Categorial Grammar : Method
+Chinese : Material
+Chinese text available : Material
+Chinese-to-English translation task : Task
+Czech newspaper texts : Material
+Deep learning methods : Method
+Discourse : Metric
+English : Material
+English : OtherScientificTerm
+English and : Material
+English corpus data : Material
+English non-parallel newspaper corpora : Material
+Euclidean distance : Method
+Euclidean distance : OtherScientificTerm
+French broadcast news transcriptions : Material
+Full digital resolution : Task
+Gaussian : OtherScientificTerm
+Gaussian mixture models : Method
+Gaussian models : Method
+German : Material
+German : OtherScientificTerm
+HMM : Method
+Human action recognition : Task
+It : Generic
+Japanese : Material
+Japanese information extraction : Task
+Japanese text : Material
+Japanese text : Task
+Japanese text processing : Task
+LFG : Task
+Language resource : Task
+Language system : Method
+MAP estimation framework : Method
+MT : Method
+MT : Task
+MT evaluation methods -LRB- BLEU : Method
+MT evaluation techniques : Method
+MT output : OtherScientificTerm
+MT system : Method
+Minimum Bayes-Risk : Method
+Monte Carlo approach : Method
+Multiple Instance Learning : Method
+NIST Automatic Content Extraction : Method
+NIST evaluation metric : Metric
+NIST sentence : Metric
+NL requirements : OtherScientificTerm
+NLP : Method
+NN search : Task
+Named Entity -LRB- NE : Task
+Natural Language Processing -LRB- NLP -RRB- applications : Task
+Natural Language Processing emphasizes components : Task
+Natural Language systems : Task
+Neural Network : Method
+Online action detection : Task
+PASCAL VOC 2006 dataset : Material
+PCA : OtherScientificTerm
+PCA : Task
+PTZ camera sequences : OtherScientificTerm
+PTZ cameras : OtherScientificTerm
+Penn Treebank WSJ : Material
+Penn WSJ : Material
+Recognition task : Task
+Senseval-3 data : Material
+Text Summarisation : OtherScientificTerm
+Training instances : Method
+Tree Adjoining Grammars : Method
+Turkish dependency treebank : Method
+Turkish word structures : OtherScientificTerm
+WSD -RRB- : OtherScientificTerm
+WSD datasets : Material
+WSD task : Task
+Web : Material
+Word Sense : Task
+accuracy : Metric
+acoustic measures : Method
+acquiring adjectival subcategorization frames -LRB- scfs -RRB- : Task
+action : OtherScientificTerm
+action classification : Task
+action model formalism : Method
+action models : Method
+action positions : OtherScientificTerm
+action prior : OtherScientificTerm
+action type : OtherScientificTerm
+active reconstruction systems : Method
+active sensing devices : OtherScientificTerm
+adaptation : Task
+affine case : OtherScientificTerm
+agglutinative language : OtherScientificTerm
+algorithm : Generic
+algorithms : Generic
+aligned bilingual corpus of word examples : Material
+alternatives : OtherScientificTerm
+ambiguity packing and stochastic disambiguation techniques : Method
+ambiguous segmentations : Task
+analysis : Method
+analyzer : Generic
+analyzing motion : OtherScientificTerm
+anaphora : Task
+anaphora references : OtherScientificTerm
+anaphora resolution : Task
+anaphoric expressions : OtherScientificTerm
+annotated training corpus : Material
+annotation elements : OtherScientificTerm
+annotation scheme : Method
+annotations : Material
+appearance : OtherScientificTerm
+appearance information : OtherScientificTerm
+applying automated evaluation techniques : Method
+approach : Generic
+approaches : Generic
+approximate : OtherScientificTerm
+approximate joint : OtherScientificTerm
+arbitrary viewpoint : Material
+array : OtherScientificTerm
+assumed model : Method
+attention : OtherScientificTerm
+auditory brainstem : OtherScientificTerm
+auditory features : OtherScientificTerm
+auditory nerve : Task
+auditory processing : Task
+augment document retrieval : Task
+automated interpretation of nominal compounds : Task
+automated segmentation : Method
+automated technique : Method
+automatic : Task
+automatic metrics : Metric
+automatic parse-based : Task
+automatic recognition system : Method
+automatic scheme : Method
+automatic speech recognition -LRB- ASR -RRB- : Task
+automatically acquiring English topic : Task
+background -RRB- : Material
+baseline : Generic
+baselines : Generic
+benchmark datasets : Material
+bilinear subspaces : Method
+bilingual corpus : Material
+binary mattes : OtherScientificTerm
+binary products : OtherScientificTerm
+blind : Generic
+blind separation of natural speech signals : Task
+blur and illumination changes : OtherScientificTerm
+board : OtherScientificTerm
+boundary detection : Task
+bounds : OtherScientificTerm
+broadcast news speech : Material
+camera motions : Material
+cascade evaluation : Task
+case study and techniques : Method
+cases where image information : OtherScientificTerm
+categories of objects : OtherScientificTerm
+categorization of objects and estimating object pose : OtherScientificTerm
+children 's names : OtherScientificTerm
+classification method : Method
+classifier because : OtherScientificTerm
+classifier functions : OtherScientificTerm
+classifier selection : Task
+classifiers : Generic
+classifiers : Method
+closed-form -LRB- analytical -RRB- solution : Method
+cluster analysis : Method
+clustering : Method
+clustering function satisfying : OtherScientificTerm
+clustering methods : Method
+color and : OtherScientificTerm
+compact lexicon : OtherScientificTerm
+complex contextual reference : OtherScientificTerm
+complex programmable spatio-temporal : Task
+complex tree structures : OtherScientificTerm
+complexity : Metric
+components : Generic
+compositional classes : OtherScientificTerm
+computational : Metric
+computational tractability : OtherScientificTerm
+computer Go : Task
+computer monitor : OtherScientificTerm
+computer vision : OtherScientificTerm
+computer vision : Task
+computer-assisted morphological analysis : Task
+conditional : OtherScientificTerm
+conduct synthetic : OtherScientificTerm
+confidence tests : OtherScientificTerm
+constraining them : Task
+constraint-based parser/generator : OtherScientificTerm
+context-dependent one : OtherScientificTerm
+context-free phrase structure rules : OtherScientificTerm
+contexts : OtherScientificTerm
+continuous : OtherScientificTerm
+continuous pen motion : OtherScientificTerm
+conversation : OtherScientificTerm
+conversational context features : OtherScientificTerm
+convex problem : Task
+convolution tree kernel : Method
+convolutional neural networks -LRB- CNN -RRB- : Method
+coordinate structures : OtherScientificTerm
+corpora -LRB- conversational telephone speech : Material
+corpus data : Material
+corpus-based method : Method
+corpus-based sample : OtherScientificTerm
+correction unit : Method
+correctness proof : OtherScientificTerm
+correlated inputs : OtherScientificTerm
+cost aggregation algorithm : Method
+cost zero solution : Method
+criterion : Generic
+cue phrases : OtherScientificTerm
+data sources : Material
+database : Task
+database access : OtherScientificTerm
+databases -RRB- : Material
+dataset : Generic
+datasets : Generic
+decision : Generic
+decision making process : OtherScientificTerm
+decision tree-based context clustering : Method
+decision-tree classifier : Method
+decoding : Task
+deep archi-tectures : OtherScientificTerm
+deep embedding methods : Method
+deep models : Method
+densely sampled : OtherScientificTerm
+density estimation : Task
+dependencies : OtherScientificTerm
+dependency : OtherScientificTerm
+dependency grammars : OtherScientificTerm
+dependency network representation : Method
+dependency tree : Method
+dependency-based grammar model : Method
+depth : OtherScientificTerm
+detecting : Task
+detecting interest : Task
+detecting sentence boundaries : Task
+detection : Task
+detection and : Task
+detection task : Task
+detector : Generic
+development of machine translation systems : Task
+dialogue act : OtherScientificTerm
+dialogue move being : Task
+dialogue state : OtherScientificTerm
+dictionaries : Generic
+dictionary : OtherScientificTerm
+dictionary lookup : OtherScientificTerm
+differential features : OtherScientificTerm
+digital architecture : Method
+dimension : OtherScientificTerm
+dimensional space : OtherScientificTerm
+direct orthographical : OtherScientificTerm
+direct projection : OtherScientificTerm
+discourse : OtherScientificTerm
+discourse and : OtherScientificTerm
+discourse phenomena : OtherScientificTerm
+discourse processing algorithms : Method
+discourse segments : OtherScientificTerm
+discourse structure : OtherScientificTerm
+discourse unfolds : OtherScientificTerm
+discrete -LRB- categorical -RRB- : OtherScientificTerm
+discrete data : Material
+discrete motor control representation : Method
+discrete nerve-action potentials : OtherScientificTerm
+discriminative model : Method
+distance : OtherScientificTerm
+distributed representations : Method
+distribution : OtherScientificTerm
+distribution of : OtherScientificTerm
+distribution of natural images : OtherScientificTerm
+distributional approximation of probabilistic context-free grammars : Task
+distributional word feature vectors : OtherScientificTerm
+document : Task
+document set returned : Task
+domain independent model : Method
+domain-specific semantic information : OtherScientificTerm
+dynamic : Method
+dynamic behavior : OtherScientificTerm
+dynamic characteristics : OtherScientificTerm
+dynamic programming -LRB- : Method
+dynamic programming approach : Method
+dynamic representation : Method
+dynamic-programming : Material
+earlier : OtherScientificTerm
+email summarization : Task
+embodied conversational agents : Task
+encodes 3D line constraints : OtherScientificTerm
+encourages correct occlusion labeling : Material
+error : Metric
+error correction method : Method
+error reduction : Method
+estimation and quantization of : Task
+evaluating aggregate : OtherScientificTerm
+evaluating feature vector : Task
+evaluation criterion : Metric
+evaluation techniques : Method
+event : OtherScientificTerm
+event elements : OtherScientificTerm
+event map : OtherScientificTerm
+events : OtherScientificTerm
+expressive speech communication : Task
+extended conversational sequences : OtherScientificTerm
+face motion patterns : OtherScientificTerm
+face recognition : Task
+false acceptance : OtherScientificTerm
+feature : OtherScientificTerm
+feature extraction : Method
+feature points : OtherScientificTerm
+feature space : OtherScientificTerm
+feature weighting and selection function : Method
+feature-based methods : Method
+features : OtherScientificTerm
+features of entities : OtherScientificTerm
+features should : OtherScientificTerm
+field structured extraction tasks : Task
+field structured text : Task
+filter interactions : OtherScientificTerm
+first-order upper : OtherScientificTerm
+foreign language : Material
+formal perspective : OtherScientificTerm
+formalisms : Generic
+framework : Generic
+frequency : Material
+frequency of events : OtherScientificTerm
+frequency of occurrences : OtherScientificTerm
+full scale two-level : OtherScientificTerm
+functions : OtherScientificTerm
+fundamental frequency -LRB- F0 : Task
+game tree search : Task
+general method : Method
+generalization : OtherScientificTerm
+generate sparse and dense detection : Task
+generative framework : Method
+generative model : Method
+generative proba-bilistic framework : Method
+generic face appearance variation : Task
+geodesic distance : OtherScientificTerm
+geometric , appearance : OtherScientificTerm
+geometric constraints : OtherScientificTerm
+geometric derivation : OtherScientificTerm
+geometric interpretation : OtherScientificTerm
+geometric structures of 3D lines : OtherScientificTerm
+global meaning of : OtherScientificTerm
+global optimality : OtherScientificTerm
+global optimization problem : Task
+grammar formalisms : Method
+grammatical formalisms : Method
+grammatical input : OtherScientificTerm
+grammatical relations : OtherScientificTerm
+graph 's : OtherScientificTerm
+graph : OtherScientificTerm
+graphs : OtherScientificTerm
+groups of patches : OtherScientificTerm
+hand-crafted rules : Method
+hand-crafted system : Method
+hand-crafted template-based generation component : Method
+hard budget constraints : OtherScientificTerm
+hard combinatorial : Method
+heavy occlusion : OtherScientificTerm
+heuristic principles : Method
+heuristic principles : OtherScientificTerm
+hidden Markov model -LRB- HMM -RRB- : Method
+hierarchical structure : OtherScientificTerm
+hierarchy constraints : OtherScientificTerm
+histogram information : OtherScientificTerm
+how Convolutional Neural Networks -LRB- CNN -RRB- architectures : Method
+human agreement : Material
+human data : Material
+human effort : OtherScientificTerm
+human interaction : Task
+human language learning process : Method
+human transcriptions : Material
+human translations : OtherScientificTerm
+human translations : Task
+hybrid local : OtherScientificTerm
+hyperplane : OtherScientificTerm
+illumination : OtherScientificTerm
+illumination variation : OtherScientificTerm
+image , detection and classification : Task
+image : OtherScientificTerm
+image classification : Task
+image data : Material
+image formation : Method
+image intensity : Task
+image matting : Task
+image patches : OtherScientificTerm
+image processing : Task
+image processing techniques : Method
+image regions : OtherScientificTerm
+image sequences : OtherScientificTerm
+image sequences : Task
+image understanding : Task
+images : Material
+images extracted : Task
+implementation of early vision applications : Task
+improving light field : OtherScientificTerm
+improving system performance : Method
+incoming imagery : OtherScientificTerm
+incremental : Method
+independent signals : OtherScientificTerm
+inevitable tracking failures : Method
+information extraction annotations : Task
+information extraction techniques : Method
+information related : OtherScientificTerm
+information retrieval engine : Task
+information source : OtherScientificTerm
+instances : OtherScientificTerm
+instantaneous mixtures : OtherScientificTerm
+integrated learning system : Method
+intelligent mobile agents : Task
+intention : OtherScientificTerm
+interactive question-answering -LRB- Q/A -RRB- system : Method
+interlingual form : OtherScientificTerm
+internal side : OtherScientificTerm
+intra-class variations : OtherScientificTerm
+it : Generic
+iterative deformation : OtherScientificTerm
+joint classification : Method
+joint matrix decomposition : OtherScientificTerm
+joint source-channel transliteration model : Method
+k-means : OtherScientificTerm
+kernel trick : Method
+knowledge sources : Material
+known motion : OtherScientificTerm
+labelled bracket : OtherScientificTerm
+language learning : Method
+language model adaptation methods : Method
+language models : Method
+language pairs : OtherScientificTerm
+large corpus : Material
+large datasets : Material
+large variation : Task
+large variations of pose : OtherScientificTerm
+large-scale structures : OtherScientificTerm
+learning problem : Task
+learning visual : Task
+learnt : Material
+legal text hierarchy : Material
+level of : OtherScientificTerm
+lexical and syntactic features : OtherScientificTerm
+lexical features : OtherScientificTerm
+light field space : OtherScientificTerm
+light field stereo matching : OtherScientificTerm
+light field super-resolution : Task
+limited-domain : Method
+line between : OtherScientificTerm
+line-assisted graph-cut -LRB- LAGC -RRB- algorithm : Method
+linear : Method
+linguistic annotation : Task
+linguistic information : OtherScientificTerm
+linguistic parser/generator : Method
+linguistic structure : OtherScientificTerm
+linguistic structure consists : OtherScientificTerm
+linguistic tools : OtherScientificTerm
+local appearance manifold structure : OtherScientificTerm
+local deterministic search : OtherScientificTerm
+local mode : OtherScientificTerm
+local modes : OtherScientificTerm
+local optimization : OtherScientificTerm
+local pattern context : OtherScientificTerm
+local range : OtherScientificTerm
+local tracker : OtherScientificTerm
+local tracking : OtherScientificTerm
+logic : OtherScientificTerm
+logic-based grammar formalism called extraposition grammars : Method
+logical expression : OtherScientificTerm
+logical form language : OtherScientificTerm
+logical formalism : Method
+logistic softmax function : OtherScientificTerm
+logistic stick-breaking representation : Method
+long stereo video streams : OtherScientificTerm
+loss defined : OtherScientificTerm
+loss functions : OtherScientificTerm
+low rank matrices : OtherScientificTerm
+low rank matrix : OtherScientificTerm
+low rank part : OtherScientificTerm
+low rank plus sparse structure : OtherScientificTerm
+low-level feature analysis : OtherScientificTerm
+low-resolution analog-to-digital conversion : Method
+lower error rate : Metric
+machine learning : Task
+machine learning algorithms : Method
+machine learning applications : Task
+machine learning approach : Method
+machine translation -LRB- MT -RRB- evaluation : Task
+machine translation -LRB- MT -RRB- systems : Task
+machine translation : OtherScientificTerm
+machine translation output : OtherScientificTerm
+machine translation outputs : OtherScientificTerm
+machine transliteration/backtransliteration : Task
+manifold learning methods : Method
+manual : OtherScientificTerm
+manual interaction : OtherScientificTerm
+manual judgement : OtherScientificTerm
+map bilinear subspaces : OtherScientificTerm
+matching of cursive : OtherScientificTerm
+matching textured scenes : Task
+mathematical formalism : Method
+matrix : OtherScientificTerm
+maximum entropy -LRB- Maxent -RRB- classifiers : Method
+maximum entropy classifier : Method
+maximum-entropy model : Method
+meaning : OtherScientificTerm
+measure of similarity : OtherScientificTerm
+measure translation : OtherScientificTerm
+measured : Material
+memory-based system : Method
+method : Generic
+method of shape constrained : Method
+methods : Generic
+metric learning formulation : Method
+metric weight constraint : OtherScientificTerm
+minimal overhead : OtherScientificTerm
+mixtures of feature distributions : OtherScientificTerm
+mobile , intelligent agent : Task
+model : Generic
+model : OtherScientificTerm
+model-based approach : Method
+modeling and subtraction of such scenes : Task
+models : Generic
+moderate positive sample mining method : Method
+modern computer games : OtherScientificTerm
+morphological analysis : Method
+morphological analysis : Task
+morphological analysis problem : Task
+morphological analyzer : Method
+morphological constructions : OtherScientificTerm
+morphological rules : OtherScientificTerm
+motion : Task
+motion and occlusion : OtherScientificTerm
+motion estimation : Task
+motor control representation : Method
+moves : OtherScientificTerm
+multilingual , audio and textual document sources : Task
+multilingual corpus : Material
+multilingual document : Task
+multilingual speech and language applications : Task
+multilingual text authoring : Method
+n-gram models : Method
+n-gram transliteration model -LRB- n-gram TM -RRB- : Method
+natural images : Material
+natural language : Material
+natural language : OtherScientificTerm
+natural language generation system : Method
+natural language generator : Task
+natural language text : Method
+natural languages : Material
+natural languages : OtherScientificTerm
+natural speech signals : Material
+nearest neighbor : Method
+negative examples : Material
+negative feedback : OtherScientificTerm
+network : Generic
+neurons : OtherScientificTerm
+noise : OtherScientificTerm
+noise patterns : OtherScientificTerm
+non-linear extension : OtherScientificTerm
+normal CF grammars : OtherScientificTerm
+normal tracking : Task
+normalized representation : Method
+numerical and temporal expressions : OtherScientificTerm
+numerical constraints : OtherScientificTerm
+numerical optimization problem : Task
+object category recognition : Task
+object category representations : Method
+object detection : Task
+object model : Method
+object parameters : OtherScientificTerm
+object pose estimation : Task
+object pose information : OtherScientificTerm
+object recognition : Task
+objective function : OtherScientificTerm
+objective measure : Metric
+objects : OtherScientificTerm
+occlusion and camera view : Material
+occlusions and reduce temporal artefacts -LRB- flicker -RRB- : OtherScientificTerm
+on-line cursive handwriting analysis and recognition : Task
+on-line handwriting : Method
+online action detection : Task
+optical flow : Task
+optimization specific : OtherScientificTerm
+outdoor surveillance : OtherScientificTerm
+outlier removal : Metric
+overall parsing accuracy : Task
+overfitting : OtherScientificTerm
+packed parse forests : Method
+paradigm : Generic
+parallel : Material
+parallel data : Material
+parallel structures : OtherScientificTerm
+parameter space : OtherScientificTerm
+parameter space of translation : OtherScientificTerm
+parameter training algorithm : Method
+paraphrase classification : Task
+paraphrase corpus : Material
+paraphrase examples : OtherScientificTerm
+paraphrases : OtherScientificTerm
+parse forest : OtherScientificTerm
+parse reduction : Method
+parse tree : OtherScientificTerm
+parse trees : OtherScientificTerm
+parser : Method
+parser evaluation methods : Method
+parsing : Task
+part-of-speech tagger : OtherScientificTerm
+partial scene segmentation : OtherScientificTerm
+pattern extraction scheme : Method
+pattern-matching language : OtherScientificTerm
+phonetic rules : OtherScientificTerm
+photometric calibration : Task
+photometric model : Method
+phrase-based statistical machine translation method : Method
+pivot MT , interactive MT : OtherScientificTerm
+pixel-level : Method
+planning algorithm : Method
+planning systems : Method
+point correspondences : OtherScientificTerm
+point detection : Task
+point of view : OtherScientificTerm
+pose and head motion variation : OtherScientificTerm
+pose and user motion pattern : OtherScientificTerm
+pose estimation : Task
+pose information : OtherScientificTerm
+pose invariance : OtherScientificTerm
+positions : OtherScientificTerm
+post : OtherScientificTerm
+post retrieval : Task
+posterior encodes sparse : Method
+practical techniques : Method
+precision : Metric
+principal component analysis : Method
+prior knowledge : OtherScientificTerm
+prior structure : OtherScientificTerm
+priori geometric constraints : OtherScientificTerm
+priori knowledge about object shape : OtherScientificTerm
+priors : OtherScientificTerm
+probabilistic context-free grammar : Method
+probabilistic finite automata : OtherScientificTerm
+probabilistic finite automaton : Method
+probabilistic framework : Method
+probabilistic parser : Method
+probabilistic shape knowledge : OtherScientificTerm
+probability distribution : OtherScientificTerm
+problem : Generic
+procedure : Generic
+procedure : Method
+procedure : OtherScientificTerm
+processing of : Task
+program : Generic
+programmable array processor : Task
+programming language : OtherScientificTerm
+projection enables reconstruction : OtherScientificTerm
+projective relations : OtherScientificTerm
+properties : OtherScientificTerm
+prototype chip : Task
+prototype natural language question answering system : Task
+prototype where : Method
+public G3D dataset : Material
+quantized levels of the model parameters : OtherScientificTerm
+random data : Material
+random modulation scheme : Method
+random projection trees : OtherScientificTerm
+random samples : OtherScientificTerm
+random sampling : Method
+random statistics : OtherScientificTerm
+ranking blog : OtherScientificTerm
+rate : Metric
+raw corpus : Material
+raw text : Material
+real applications : Material
+real image data : Material
+real-world environments : Material
+reasoning : OtherScientificTerm
+reasoning about : Task
+recall rate : Metric
+recall rates : Metric
+recognition : Method
+recognition : Task
+recognition and classification of proper names : Task
+recognition scores : OtherScientificTerm
+recognition tasks : Task
+reconstruction : Task
+recover 3 : OtherScientificTerm
+recovery : OtherScientificTerm
+reduction : Method
+reference translations : Task
+referring expressions : OtherScientificTerm
+regression optimization : Method
+regression problem : Method
+regularization enables : OtherScientificTerm
+relation extraction : OtherScientificTerm
+relational database : Task
+relations between named entities : OtherScientificTerm
+relative clauses : OtherScientificTerm
+relative entropy : OtherScientificTerm
+relative geometry : OtherScientificTerm
+representation : Generic
+representation capable : Method
+representations : Generic
+requiring data retrieval : Material
+restricted domain parser : Method
+retrieval approach : Method
+retrieval effectiveness : Task
+retrieval process : Task
+rewriting systems : Method
+rhetorical moves : OtherScientificTerm
+robust CNN : Task
+robust PCA -RRB- : Method
+robust PCA : Method
+robust PCA : Task
+robust automatic abstracting systems : Task
+root word : OtherScientificTerm
+root word lexicon : OtherScientificTerm
+rule-based approach : Method
+rule-based approaches : Method
+rule-based learning algorithm : Method
+rule-based sentence : OtherScientificTerm
+rule-based systems : Method
+rules : OtherScientificTerm
+salient image features : OtherScientificTerm
+sampled parameter space : OtherScientificTerm
+sampling probabilities : OtherScientificTerm
+scene description : Task
+scene geometry : OtherScientificTerm
+scene objects : OtherScientificTerm
+scheme : Generic
+scientific articles : OtherScientificTerm
+search algorithm : Method
+search procedure : Method
+search restriction : Method
+semantic caseframe instantiation : OtherScientificTerm
+semantic characteristics : OtherScientificTerm
+semantic constraints : OtherScientificTerm
+semantic construction of noun phrase : Task
+semantic criterion : OtherScientificTerm
+semantic equivalence : Task
+semantic information : OtherScientificTerm
+semantic interpretation or automatic translation of natural language : Task
+semantic label : Task
+semantic principles : OtherScientificTerm
+semantics represented : OtherScientificTerm
+semi-supervised methods : Method
+sentence condensation : OtherScientificTerm
+sentence condensation systems : Task
+sentence extraction : Method
+sentence extraction : OtherScientificTerm
+sentence-level semantic equivalence classification : Task
+separated signals : OtherScientificTerm
+separation accuracy : Metric
+separation method : Method
+shape information : OtherScientificTerm
+side information : OtherScientificTerm
+signal processing : Method
+signals : OtherScientificTerm
+similarity measure : Metric
+simulated construction : Task
+simultaneous object recognition and : Task
+single chip : OtherScientificTerm
+slice disambiguation : Task
+smoothing : OtherScientificTerm
+software : OtherScientificTerm
+sparse residual : OtherScientificTerm
+spatial and temporal artefacts : OtherScientificTerm
+spatial relationships : OtherScientificTerm
+speaker 's gaze information : OtherScientificTerm
+spectral clustering : Task
+spectral clustering based approach : Method
+speech : Material
+speech F0 : Method
+speech information : OtherScientificTerm
+speech recognition : Task
+speech syntax : OtherScientificTerm
+spoken dialogue system : Method
+spoken language understanding system : Method
+spontaneous speech : Material
+state-of-the-art : Generic
+state-of-the-art methods : Generic
+static or quasi-static structures : OtherScientificTerm
+statistical MT : Task
+statistical approach : Method
+statistical behavior : OtherScientificTerm
+statistical learning : Method
+statistical machine translation -LRB- MT -RRB- : Task
+statistical machine translation : Task
+statistical machine translation system : Method
+statistical methods : Method
+statistical model : Method
+statistical parser : Method
+statistical translation model : Method
+statistics reflect semantic constraints : OtherScientificTerm
+stereo algorithm : Method
+stereo images : Material
+stereo matching : OtherScientificTerm
+stereo reconstruction scheme : Method
+stereo vision : OtherScientificTerm
+stochastic gradient descent : Method
+stochastic output selection : Task
+strategies : Generic
+stratified sampling : Method
+structure : OtherScientificTerm
+structure of : OtherScientificTerm
+structure of purposes -LRB- : OtherScientificTerm
+subcategorization acquisition : OtherScientificTerm
+sufficient constraints : OtherScientificTerm
+summarization : Task
+summarization approaches : Task
+summarization quality : Metric
+superior feature vectors : OtherScientificTerm
+supervised methods : Method
+supervised training data : Material
+surveillance scenarios : OtherScientificTerm
+synchronous TAGs : OtherScientificTerm
+syntactic ambiguities : OtherScientificTerm
+syntactic coverage : OtherScientificTerm
+syntactic knowledge : OtherScientificTerm
+syntactic priming : OtherScientificTerm
+syntactic structure : OtherScientificTerm
+syntactic structure features : OtherScientificTerm
+syntactic structure information : OtherScientificTerm
+syntax : OtherScientificTerm
+synthetic : Material
+synthetic and real data : Material
+synthetic data : Material
+system : Generic
+system combination : Method
+tags and attributes : OtherScientificTerm
+task : Generic
+tasks : Task
+technique : Generic
+temporal localiza-tion information : OtherScientificTerm
+temporal maintenance of a : Task
+temporal prior : OtherScientificTerm
+text input : OtherScientificTerm
+text revision across languages : Material
+text-to-speech synthesis : OtherScientificTerm
+textured patterns : OtherScientificTerm
+them : Generic
+theoretical generalization : OtherScientificTerm
+theory of discourse structure : Task
+tool : Generic
+training and recognition input : OtherScientificTerm
+training data : Material
+training method : Method
+transfer component : Method
+translated newswire text : OtherScientificTerm
+translation accuracy : Metric
+translation direction : Task
+translation errors : Task
+translation process : Task
+transliteration accuracy : Metric
+transliteration process : Task
+transparent objects : OtherScientificTerm
+traveling salesman problem : Task
+tree : OtherScientificTerm
+trees : OtherScientificTerm
+ungrammatical input : OtherScientificTerm
+unified framework : Method
+uniform sampling : Method
+unknown word features : OtherScientificTerm
+unlabeled corpus : Material
+unlabeled examples : OtherScientificTerm
+unlexicalized parser : Method
+unstructured patterns : OtherScientificTerm
+unsupervised HMM learning fails : Task
+unsupervised WSD : Task
+unsupervised WSD systems : Method
+unsupervised fashion : OtherScientificTerm
+unsupervised learning approach : Method
+unsupervised methods : Method
+unsupervised object : OtherScientificTerm
+unsupervised object : Task
+unsupervised seg-mentation : Task
+useful disambiguation tool : Method
+useful features : OtherScientificTerm
+useful structure : OtherScientificTerm
+vector : OtherScientificTerm
+vector cooccurrence algorithm : Method
+verbal : Method
+verbal and : OtherScientificTerm
+verbal structure or vice-versa : OtherScientificTerm
+video dataset : Material
+video sequences : OtherScientificTerm
+video streams : Task
+videos : Material
+view generation : Task
+viewpoint classification task : Task
+viewpoint classification tasks : Task
+viewpoints models : Method
+virtual camera : Material
+vision systems : Task
+visual inspection : OtherScientificTerm
+visual object tracking : OtherScientificTerm
+visual quality : Metric
+weakly supervised dependency parser : Method
+weighted : OtherScientificTerm
+weighted rank loss : OtherScientificTerm
+what we refer : OtherScientificTerm
+word and garbage models : Method
+word list : Material
+word list : OtherScientificTerm
+word matches : OtherScientificTerm
+word reordering : OtherScientificTerm
+word sense : Task
+word senses : OtherScientificTerm
+word similarity : Metric
+word similarity : OtherScientificTerm
+word similarity measures : Task
+word spotting : OtherScientificTerm
+word structures : OtherScientificTerm
+¨ ıve : Method
+¨ ıve listeners : Task
