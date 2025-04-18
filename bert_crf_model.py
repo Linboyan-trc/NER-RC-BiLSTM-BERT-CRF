@@ -355,7 +355,7 @@ def train():
     optimizer = AdamW(model.parameters(), lr=3e-5)
 
     # 7. 训练
-    epochs = 2
+    epochs = 3
     best_dev_f1 = 0
     best_model_state = None
     with open("log/bert/log_train.txt", "w") as f:
