@@ -277,7 +277,7 @@ def evaluate(model, dataloader, idx2tag):
             for i in range(len(bio_tags_predicted)):
                 # 6.3.4 单个句子的真实标签索引，这里会有padding，需要结合mask去掉padding
                 single_sentence_true_tag_unchunked = target[i]
-                single_sentence_mask_unchunked = mask[i].numpy().bool()
+                single_sentence_mask_unchunked = mask[i].bool().numpy()
                 single_sentence_true_tag = []
                 for j in range(len(single_sentence_mask_unchunked)):
                     if single_sentence_mask_unchunked[j]:
