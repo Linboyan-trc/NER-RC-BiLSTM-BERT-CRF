@@ -1,3 +1,60 @@
 ####################################################################################################
 Epoch 1:
-  - Avg Training Loss: 36.5707
+  - Avg Training Loss: 36.6423
+  - Dev Precision: 0.5049
+  - Dev Recall: 0.5087
+  - Dev F1 Score: 0.5068
+  - Training Time: 59.24 seconds
+                     precision    recall  f1-score   support
+
+            Generic       0.98      0.86      0.92       732
+           Material       1.00      0.00      0.00       139
+             Method       0.32      0.57      0.41       474
+             Metric       1.00      0.00      0.00        71
+OtherScientificTerm       0.25      0.32      0.28       376
+               Task       0.17      0.04      0.07       231
+
+          micro avg       0.50      0.51      0.51      2023
+          macro avg       0.62      0.30      0.28      2023
+       weighted avg       0.60      0.51      0.49      2023
+
+####################################################################################################
+Epoch 2:
+  - Avg Training Loss: 19.1093
+  - Dev Precision: 0.6642
+  - Dev Recall: 0.6787
+  - Dev F1 Score: 0.6714
+  - Training Time: 40.23 seconds
+                     precision    recall  f1-score   support
+
+            Generic       0.95      0.93      0.94       732
+           Material       0.37      0.31      0.34       139
+             Method       0.59      0.72      0.65       474
+             Metric       0.20      0.01      0.03        71
+OtherScientificTerm       0.44      0.52      0.47       376
+               Task       0.54      0.48      0.51       231
+
+          micro avg       0.66      0.68      0.67      2023
+          macro avg       0.51      0.50      0.49      2023
+       weighted avg       0.66      0.68      0.66      2023
+
+####################################################################################################
+Epoch 3:
+  - Avg Training Loss: 12.4978
+  - Dev Precision: 0.6927
+  - Dev Recall: 0.7197
+  - Dev F1 Score: 0.7059
+  - Training Time: 38.74 seconds
+                     precision    recall  f1-score   support
+
+            Generic       0.97      0.89      0.93       732
+           Material       0.50      0.62      0.55       139
+             Method       0.77      0.69      0.73       474
+             Metric       0.61      0.20      0.30        71
+OtherScientificTerm       0.46      0.62      0.53       376
+               Task       0.48      0.63      0.54       231
+
+          micro avg       0.69      0.72      0.71      2023
+          macro avg       0.63      0.61      0.60      2023
+       weighted avg       0.73      0.72      0.71      2023
+

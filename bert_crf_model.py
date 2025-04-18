@@ -392,16 +392,16 @@ def infer(use_saved_model=True, best_model_state=None):
     tokenizer = BertTokenizerFast.from_pretrained("bert-base-cased")
     train_all_file_bios = get_all_files_bios("data/train.json")
     test_all_file_bios = get_all_files_bios("data/test.json")
-    test_words = get_words("data/test.json")
+    test_sent_words = get_words("data/test.json")  # 原始单词列表
 
-    # 2. 构建词表和标签表
+    # 2. 构建标签映射
     tag2idx, idx2tag = build_tag_map(train_all_file_bios)
 
     # 3. 构建测试集 Dataset 和 DataLoader
     test_dataset = NERDataset(test_all_file_bios, tokenizer, tag2idx)
     test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
 
-    # 4. 创建模型
+    # 4. 加载模型
     model = BERT_CRF(tagset_size=len(tag2idx))
 
     # 5. 加载权重
@@ -417,11 +417,10 @@ def infer(use_saved_model=True, best_model_state=None):
     all_entities = []
     all_words = []
 
-    cnt = 0
+    sent_idx = 0  
     with torch.no_grad():
         for batch in tqdm(test_loader, desc='Testing'):
             # 2.2.1 input_data, target, mask都是32*128的张量
-            # 2.2.1 其中target已经转换为数组
             input_data = batch['input_ids']
             target = batch['tag_ids']
             mask = batch['attention_mask'].bool()
@@ -429,71 +428,66 @@ def infer(use_saved_model=True, best_model_state=None):
             # 2.2.2 一个列表，每个元素也是列表，是一个句子的预测标签
             pred_tags = model(input_data, mask=mask)
 
-            # 5.2 遍历列表，取出每个句子
+             # 5.2 遍历列表，取出每个句子
             for i in range(len(pred_tags)):
-                # 5.2.1 word_seq = [tensor(1),...]
-                # 5.2.1 gold_seq = [tensor(1),...]
-                # 5.2.1 mask = [True,...]
-                # 5.2.1 pred_seq = [1,2,4,...]
-                word_seq = input_data[i]
                 gold_seq = target[i]
-                mask_seq = mask[i]
                 pred_seq = pred_tags[i]
 
-                sent_words = []
-                sent_gold_tags = []
-                sent_pred_tags = []
+                # 用 get_words() 中提取的句子替代原 raw_words
+                raw_words = test_sent_words[sent_idx]
 
-                sent_entities = []
+                encoding = tokenizer(raw_words,
+                                     is_split_into_words=True,
+                                     return_offsets_mapping=False,
+                                     return_tensors='pt',
+                                     truncation=True,
+                                     padding='max_length',
+                                     max_length=128)
 
-                # 5.2.2 遍历单个句子的mask
-                for j in range(len(mask_seq)):
-                    # 5.2.3 单词有效
-                    # 5.2.3 获取单词索引，然后索引转换成字符串
-                    # 5.2.3 单词真实标签，转换为字符串
-                    # 5.2.3 单词预测标签，转换为字符串
-                    # 5.2.4 然后添加到句子的单词，句子的真实标签，句子的预测标签中
-                    # 5.2.5 如果单词的标签不是"O"，就加入到句子实体
-                    if mask_seq[j]:
-                        word = test_words[i + 32 * cnt][j]
-                        gold_label = idx2tag[gold_seq[j].item()]
-                        pred_label = idx2tag[pred_seq[j]]
+                word_ids = encoding.word_ids(batch_index=0)
 
-                        sent_words.append(word)
-                        sent_gold_tags.append(gold_label)
-                        sent_pred_tags.append(pred_label)
+                sent_words, sent_gold_tags, sent_pred_tags, sent_entities = [], [], [], []
+                previous_word_idx = None
+                for j, word_idx in enumerate(word_ids):
+                    if word_idx is None or word_idx == previous_word_idx:
+                        continue
+                    previous_word_idx = word_idx
 
-                        if pred_label != "O":
-                            sent_entities.append(f"{word} : {pred_label}")
+                    word = raw_words[word_idx]
+                    gold_label = idx2tag[gold_seq[j].item()]
+                    pred_label = idx2tag[pred_seq[j]]
 
-                # 5.2.6 将单个句子的单词，真实标签，预测标签，实体对，加入到全局列表中
+                    sent_words.append(word)
+                    sent_gold_tags.append(gold_label)
+                    sent_pred_tags.append(pred_label)
+
+                    if pred_label != "O":
+                        sent_entities.append(f"{word} : {pred_label}")
+
                 all_words.append(sent_words)
                 all_labels.append(sent_gold_tags)
                 all_preds.append(sent_pred_tags)
                 all_entities.append(sent_entities)
 
-            cnt += 1
+                sent_idx += 1
 
-    # 保存实体提取结果
-    # 保存实体短语的集合，避免重复
+    # 5. 提取实体短语
     entity_phrases = set()
-
-    for entity_list in all_preds:
-        for words, tags in zip(all_words, all_preds):
-            i = 0
-            while i < len(tags):
-                tag = tags[i]
-                if tag.startswith("B-"):
-                    entity_type = tag[2:]
-                    entity_tokens = [words[i]]
+    for words, tags in zip(all_words, all_preds):
+        i = 0
+        while i < len(tags):
+            tag = tags[i]
+            if tag.startswith("B-"):
+                entity_type = tag[2:]
+                entity_tokens = [words[i]]
+                i += 1
+                while i < len(tags) and tags[i] == f"I-{entity_type}":
+                    entity_tokens.append(words[i])
                     i += 1
-                    while i < len(tags) and tags[i] == f"I-{entity_type}":
-                        entity_tokens.append(words[i])
-                        i += 1
-                    phrase = " ".join(entity_tokens)
-                    entity_phrases.add(f"{phrase} : {entity_type}")
-                else:
-                    i += 1
+                phrase = " ".join(entity_tokens)
+                entity_phrases.add(f"{phrase} : {entity_type}")
+            else:
+                i += 1
 
     # 写入文件
     with open("output/predicted_entities_bert.txt", "w", encoding="utf-8") as f:
@@ -513,7 +507,6 @@ def infer(use_saved_model=True, best_model_state=None):
         print(f"F1 Score:  {f1:.4f}", file=f)
         print(report, file=f)
 
-    # 8. 保存预测结果
     with open("output/bert/test_labels.txt", "w") as f:
         for sentence in all_labels:
             print(sentence, file=f)
