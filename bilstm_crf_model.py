@@ -9,6 +9,7 @@ from torchcrf import CRF
 import time
 from seqeval.metrics import precision_score, recall_score, f1_score, classification_report
 
+
 ################################################################################################################################################################
 # 1. 处理数据
 def convert_to_BIO(sentences, ner):
@@ -75,6 +76,20 @@ def get_all_files_bios(filename):
         all_file_bios.extend(bio)
 
     return all_file_bios
+
+
+def get_words(filename):
+    # 1. 读取json文件
+    with open(filename) as f:
+        datas = [json.loads(line) for line in f]
+
+    # 2. all_words
+    all_words = []
+    for data_line in datas:
+        for sentence in data_line["sentences"]:
+            all_words.append(sentence)
+
+    return all_words
 
 
 ################################################################################################################################################################
@@ -214,123 +229,291 @@ class NERDataset(Dataset):
         return torch.tensor(word_ids), torch.tensor(tag_ids), torch.tensor(mask)
 
 
-################################################################################################################################################################
-# 1. 处理数据
-train_all_file_bios = get_all_files_bios("data/train.json")
-dev_all_file_bios = get_all_files_bios("data/dev.json")
+####################################################################################################
+# 1. 训练
+def train():
+    # 1. 处理数据
+    train_all_file_bios = get_all_files_bios("data/train.json")
+    dev_all_file_bios = get_all_files_bios("data/dev.json")
 
-# 2. 根据训练集构建单词表和标签表
-word2idx, tag2idx = build_vocab(train_all_file_bios)
+    # 2. 根据训练集构建单词表和标签表
+    word2idx, tag2idx = build_vocab(train_all_file_bios)
 
-# 3. 定义模型
-# 3.1 损失函数用于评估当前误差，使用交叉熵
-# 3.2 优化器用于调整模型参数，减少误差
-# 3.3 在优化器中设置了学习率lr = 0.001
-model = BiLSTM_CRF(vocab_size=len(word2idx), tagset_size=len(tag2idx))
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+    # 3. 定义模型
+    # 3.1 损失函数用于评估当前误差，使用交叉熵
+    # 3.2 优化器用于调整模型参数，减少误差
+    # 3.3 在优化器中设置了学习率lr = 0.001
+    model = BiLSTM_CRF(vocab_size=len(word2idx), tagset_size=len(tag2idx))
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# 4.加载为Dataset
-# 4.1 对齐接口
-train_dataset = NERDataset(train_all_file_bios, word2idx, tag2idx)
-dev_dataset = NERDataset(dev_all_file_bios, word2idx, tag2idx)
+    # 4.加载为Dataset
+    # 4.1 对齐接口
+    train_dataset = NERDataset(train_all_file_bios, word2idx, tag2idx)
+    dev_dataset = NERDataset(dev_all_file_bios, word2idx, tag2idx)
 
-# 5.传入数据
-# 5.1 训练集中共1861条数据，每次处理32个句子，batch_size设置为32
-# 5.2 因此每个epoch会分为1861/32 = 59次来批处理数据，每个epoch开始前会对1861个数据进行打乱，一共训练5个epoch
-# 5.3 而损失函数和优化器在每次批处理后就工作，去更新模型参数，因此损失函数和优化器一共工作5 * 59 = 295次
-train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
-dev_loader = DataLoader(dev_dataset, batch_size=32, shuffle=False)
+    # 5.传入数据
+    # 5.1 训练集中共1861条数据，每次处理32个句子，batch_size设置为32
+    # 5.2 因此每个epoch会分为1861/32 = 59次来批处理数据，每个epoch开始前会对1861个数据进行打乱，一共训练5个epoch
+    # 5.3 而损失函数和优化器在每次批处理后就工作，去更新模型参数，因此损失函数和优化器一共工作5 * 59 = 295次
+    train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+    dev_loader = DataLoader(dev_dataset, batch_size=32, shuffle=False)
 
-# 训练过程
-best_dev_f1 = 0
-best_model_state = None
+    # 训练过程
+    best_dev_f1 = 0
+    best_model_state = None
 
-# 6. 训练
-# 6.1 对1861条数据训练5次，每次分59批训练，一批有32个句子
-epochs = 10
-for epoch in range(epochs):
-    # 6.1 对每个批训练
-    # 6.1.1 加载1861条数据后，设置batch_size=32，train_loader中共有59批数据，训练59批，在这个过程中已经在进行参数更新
-    start_time = time.time()
-    model.train()
-    total_loss = 0
-    for batch in train_loader:
-        # 6.3 获取每个批次的数据
-        # 6.3.1 每个批次共3个张量，每个张量都有32个向量，每个向量128维
-        # 6.3.2 第一个张量是32个词向量，第二个张量是32个标签向量，第三个张量是32个掩码，每个张量32行，128列
-        # 6.3.3 因此input_data是一个32*128的张量，对应32个句子的词向量，target是一个32*128的张量，对应32个句子的标签向量
-        optimizer.zero_grad()
-        input_data, target, mask = batch
-
-        # 6.4 就是调用BiLSTM_CRF的forword方法
-        # 6.4 对32个句子进行embedding + lstm + linear计算，最终crf计算损
-        loss = model(input_data, tags=target, mask=mask)
-
-        loss.backward()
-        optimizer.step()
-
-        total_loss += loss.item()
-
-    avg_loss = total_loss / len(train_loader)
-    epoch_time = time.time() - start_time
-
-    # 6.2 训练完59批，进行评估
-    model.eval()
-
-    # 6.3 加载验证集的数据，共50条，2批
-    dev_predictions = []
-    dev_labels = []
-    with torch.no_grad():
-        for batch in dev_loader:
-            # 6.3.1 input_data, target, mask都是32*128的张量
+    # 6. 训练
+    # 6.1 对1861条数据训练5次，每次分59批训练，一批有32个句子
+    epochs = 20
+    with open("log/bilstm/log_train.txt", "w") as f:
+        pass
+    for epoch in range(epochs):
+        # 6.1 对每个批训练
+        # 6.1.1 加载1861条数据后，设置batch_size=32，train_loader中共有59批数据，训练59批，在这个过程中已经在进行参数更新
+        start_time = time.time()
+        model.train()
+        total_loss = 0
+        for batch in train_loader:
+            # 6.3 获取每个批次的数据
+            # 6.3.1 每个批次共3个张量，每个张量都有32个向量，每个向量128维
+            # 6.3.2 第一个张量是32个词向量，第二个张量是32个标签向量，第三个张量是32个掩码，每个张量32行，128列
+            # 6.3.3 因此input_data是一个32*128的张量，对应32个句子的词向量，target是一个32*128的张量，对应32个句子的标签向量
+            optimizer.zero_grad()
             input_data, target, mask = batch
 
-            # 6.3.2 得到32个句子的tags预测结果，是一个有32个元素的列表，每个元素是对应单句的tags预测结果
-            bio_tags_predicted = model(input_data, mask=mask)
-            dev_predictions += bio_tags_predicted
+            # 6.4 就是调用BiLSTM_CRF的forword方法
+            # 6.4 对32个句子进行embedding + lstm + linear计算，最终crf计算损
+            loss = model(input_data, tags=target, mask=mask)
 
-            # 6.3.3 遍历32个句子，将预测的tags和真实的tags汇成两个列表
-            for i in range(len(bio_tags_predicted)):
-                # 6.3.4 单个句子的真实标签索引，这里会有padding，需要结合mask去掉padding
-                single_sentence_true_tag_unchunked = target[i]
-                single_sentence_mask_unchunked = mask[i]
-                single_sentence_true_tag = []
-                for j in range(len(single_sentence_mask_unchunked)):
-                    if single_sentence_mask_unchunked[j]:
-                        single_sentence_true_tag.append(single_sentence_true_tag_unchunked[j].item())
-                dev_labels.append(single_sentence_true_tag)
+            loss.backward()
+            optimizer.step()
 
+            total_loss += loss.item()
+
+        avg_loss = total_loss / len(train_loader)
+        epoch_time = time.time() - start_time
+
+        # 6.2 训练完59批，进行评估
+        model.eval()
+
+        # 6.3 加载验证集的数据，共50条，2批
+        dev_predictions = []
+        dev_labels = []
+        with torch.no_grad():
+            for batch in dev_loader:
+                # 6.3.1 input_data, target, mask都是32*128的张量
+                input_data, target, mask = batch
+
+                # 6.3.2 得到32个句子的tags预测结果，是一个有32个元素的列表，每个元素是对应单句的tags预测结果
+                bio_tags_predicted = model(input_data, mask=mask)
+                dev_predictions += bio_tags_predicted
+
+                # 6.3.3 遍历32个句子，将预测的tags和真实的tags汇成两个列表
+                for i in range(len(bio_tags_predicted)):
+                    # 6.3.4 单个句子的真实标签索引，这里会有padding，需要结合mask去掉padding
+                    single_sentence_true_tag_unchunked = target[i]
+                    single_sentence_mask_unchunked = mask[i]
+                    single_sentence_true_tag = []
+                    for j in range(len(single_sentence_mask_unchunked)):
+                        if single_sentence_mask_unchunked[j]:
+                            single_sentence_true_tag.append(single_sentence_true_tag_unchunked[j].item())
+                    dev_labels.append(single_sentence_true_tag)
+
+        idx2tag = {v: k for k, v in tag2idx.items()}
+        dev_labels_str = []
+        for sentence in dev_labels:
+            sentence_labels = []
+            for label in sentence:
+                sentence_labels.append(idx2tag[label])
+            dev_labels_str.append(sentence_labels)
+
+        dev_predictions_str = []
+        for sentence in dev_predictions:
+            sentence_labels = []
+            for label in sentence:
+                sentence_labels.append(idx2tag[label])
+            dev_predictions_str.append(sentence_labels)
+
+        with open("output/bilstm/dev_labels.txt", "w") as f:
+            for sentence in dev_labels_str:
+                print(sentence, file=f)
+        with open("output/bilstm/dev_predictions.txt", "w") as f:
+            for sentence in dev_predictions_str:
+                print(sentence, file=f)
+
+        precision = precision_score(dev_labels_str, dev_predictions_str, zero_division=1)
+        recall = recall_score(dev_labels_str, dev_predictions_str, zero_division=1)
+        f1 = f1_score(dev_labels_str, dev_predictions_str, zero_division=1)
+        report = classification_report(dev_labels_str, dev_predictions_str, zero_division=1)
+
+        with open("log/bilstm/log_train.txt", "a") as f:
+            print(
+                f"####################################################################################################",
+                file=f)
+            print(f"Epoch {epoch + 1}:", file=f)
+            print(f"  - Avg Training Loss: {avg_loss:.4f}", file=f)
+            print(f"  - Dev Precision: {precision:.4f}", file=f)
+            print(f"  - Dev Recall: {recall:.4f}", file=f)
+            print(f"  - Dev F1 Score: {f1:.4f}", file=f)
+            print(f"  - Training Time: {epoch_time:.2f} seconds", file=f)
+            print(report, file=f)
+
+        if f1 > best_dev_f1:
+            best_dev_f1 = f1
+            best_model_state = model.state_dict()
+
+    return best_model_state
+
+
+# 2. 推理
+def infer(use_saved_model=True, best_model_state=None):
+    # 1. 加载数据
+    train_all_file_bios = get_all_files_bios("data/train.json")
+    test_all_file_bios = get_all_files_bios("data/test.json")
+    test_words = get_words("data/test.json")
+
+    # 2. 构建词表和标签表
+    word2idx, tag2idx = build_vocab(train_all_file_bios)
     idx2tag = {v: k for k, v in tag2idx.items()}
-    dev_labels_str = []
-    for sentence in dev_labels:
-        sentence_labels = []
-        for label in sentence:
-            sentence_labels.append(idx2tag[label])
-        dev_labels_str.append(sentence_labels)
+    idx2word = {v: k for k, v in word2idx.items()}
 
-    dev_predictions_str = []
-    for sentence in dev_predictions:
-        sentence_labels = []
-        for label in sentence:
-            sentence_labels.append(idx2tag[label])
-        dev_predictions_str.append(sentence_labels)
+    # 3. 构建测试集 Dataset 和 DataLoader
+    test_dataset = NERDataset(test_all_file_bios, word2idx, tag2idx)
+    test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
 
-    precision = precision_score(dev_labels_str, dev_predictions_str, zero_division=1)
-    recall = recall_score(dev_labels_str, dev_predictions_str, zero_division=1)
-    f1 = f1_score(dev_labels_str, dev_predictions_str, zero_division=1)
-    report = classification_report(dev_labels_str, dev_predictions_str, zero_division=1)
+    # 4. 创建模型
+    model = BiLSTM_CRF(vocab_size=len(word2idx), tagset_size=len(tag2idx))
 
-    with open("log/bilstm/log_train.txt", "a")as f:
-        print(f"####################################################################################################", file=f)
-        print(f"Epoch {epoch + 1}:",file=f)
-        print(f"  - Avg Training Loss: {avg_loss:.4f}",file=f)
-        print(f"  - Dev Precision: {precision:.4f}",file=f)
-        print(f"  - Dev Recall: {recall:.4f}",file=f)
-        print(f"  - Dev F1 Score: {f1:.4f}",file=f)
-        print(f"  - Training Time: {epoch_time:.2f} seconds",file=f)
-        print(report,file=f)
+    # 5. 加载权重
+    if use_saved_model:
+        model.load_state_dict(torch.load("best_model.pth"))
+    else:
+        model.load_state_dict(best_model_state)
 
-    if f1 > best_dev_f1:
-        best_dev_f1 = f1
-        best_model_state = model.state_dict()
+    # 6. 推理
+    model.eval()
+    all_preds = []
+    all_labels = []
+    all_entities = []
+    all_words = []
+
+    cnt = 0
+    with torch.no_grad():
+        for batch in test_loader:
+            input_data, target, mask = batch
+
+            # 5.1 一个列表，每个元素也是列表，是一个句子的预测标签
+            pred_tags = model(input_data, mask=mask)
+
+            # 5.2 遍历列表，取出每个句子
+            for i in range(len(pred_tags)):
+                # 5.2.1 word_seq = [tensor(1),...]
+                # 5.2.1 gold_seq = [tensor(1),...]
+                # 5.2.1 mask = [True,...]
+                # 5.2.1 pred_seq = [1,2,4,...]
+                word_seq = input_data[i]
+                gold_seq = target[i]
+                mask_seq = mask[i]
+                pred_seq = pred_tags[i]
+
+                sent_words = []
+                sent_gold_tags = []
+                sent_pred_tags = []
+
+                sent_entities = []
+
+                # 5.2.2 遍历单个句子的mask
+                for j in range(len(mask_seq)):
+                    # 5.2.3 单词有效
+                    # 5.2.3 获取单词索引，然后索引转换成字符串
+                    # 5.2.3 单词真实标签，转换为字符串
+                    # 5.2.3 单词预测标签，转换为字符串
+                    # 5.2.4 然后添加到句子的单词，句子的真实标签，句子的预测标签中
+                    # 5.2.5 如果单词的标签不是"O"，就加入到句子实体
+                    if mask_seq[j]:
+                        word = test_words[i + 32 * cnt][j]
+                        gold_label = idx2tag[gold_seq[j].item()]
+                        pred_label = idx2tag[pred_seq[j]]
+
+                        sent_words.append(word)
+                        sent_gold_tags.append(gold_label)
+                        sent_pred_tags.append(pred_label)
+
+                        if pred_label != "O":
+                            sent_entities.append(f"{word} : {pred_label}")
+
+                # 5.2.6 将单个句子的单词，真实标签，预测标签，实体对，加入到全局列表中
+                all_words.append(sent_words)
+                all_labels.append(sent_gold_tags)
+                all_preds.append(sent_pred_tags)
+                all_entities.append(sent_entities)
+
+            cnt += 1
+
+    # 保存实体提取结果
+    # 保存实体短语的集合，避免重复
+    entity_phrases = set()
+
+    for entity_list in all_preds:
+        for words, tags in zip(all_words, all_preds):
+            i = 0
+            while i < len(tags):
+                tag = tags[i]
+                if tag.startswith("B-"):
+                    entity_type = tag[2:]
+                    entity_tokens = [words[i]]
+                    i += 1
+                    while i < len(tags) and tags[i] == f"I-{entity_type}":
+                        entity_tokens.append(words[i])
+                        i += 1
+                    phrase = " ".join(entity_tokens)
+                    entity_phrases.add(f"{phrase} : {entity_type}")
+                else:
+                    i += 1
+
+    # 写入文件
+    with open("output/predicted_entities_bilstm.txt", "w", encoding="utf-8") as f:
+        for item in sorted(entity_phrases):
+            f.write(item + "\n")
+
+    # 打印评估报告
+    precision = precision_score(all_labels, all_preds, zero_division=1)
+    recall = recall_score(all_labels, all_preds, zero_division=1)
+    f1 = f1_score(all_labels, all_preds, zero_division=1)
+    report = classification_report(all_labels, all_preds, zero_division=1)
+
+    with open("log/bilstm/log_infer.txt", "w") as f:
+        print("===== Evaluation on Test Set =====", file=f)
+        print(f"Precision: {precision:.4f}", file=f)
+        print(f"Recall:    {recall:.4f}", file=f)
+        print(f"F1 Score:  {f1:.4f}", file=f)
+        print(report, file=f)
+
+    # 8. 保存预测结果
+    with open("output/bilstm/test_labels.txt", "w") as f:
+        for sentence in all_labels:
+            print(sentence, file=f)
+    with open("output/bilstm/test_predictions.txt", "w") as f:
+        for sentence in all_preds:
+            print(sentence, file=f)
+
+
+####################################################################################################
+# 1. 主代码
+if __name__ == "__main__":
+    print("请输入数字以选择操作:")
+    print("1: train进行训练(生成模型文件)")
+    print("2: infer进行实体抽取(基于模型文件)")
+    print("3: train+infer进行实体抽取(不生成模型文件)")
+    choice = input("你的选择是：").strip()
+
+    if choice == "1":
+        best_model_state = train()
         torch.save(best_model_state, "best_model.pth")
+    elif choice == "2":
+        infer(use_saved_model=True)
+    elif choice == "3":
+        best_model_state = train()
+        infer(use_saved_model=False, best_model_state=best_model_state)
+    else:
+        print("无效输入，请输入 1、2 或 3。")
