@@ -1,0 +1,2 @@
+{"B-Generic": 0, "B-Material": 1, "B-Method": 2, "B-Metric": 3, "B-OtherScientificTerm": 4, "B-Task": 5, "I-Generic": 6, "I-Material": 7, "I-Method": 8, "I-Metric": 9, "I-OtherScientificTerm": 10, "I-Task": 11, "O": 12}
+{"0": "B-Generic", "1": "B-Material", "2": "B-Method", "3": "B-Metric", "4": "B-OtherScientificTerm", "5": "B-Task", "6": "I-Generic", "7": "I-Material", "8": "I-Method", "9": "I-Metric", "10": "I-OtherScientificTerm", "11": "I-Task", "12": "O"}

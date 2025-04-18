@@ -347,9 +347,7 @@ def train():
         report = classification_report(dev_labels_str, dev_predictions_str, zero_division=1)
 
         with open("log/bilstm/log_train.txt", "a") as f:
-            print(
-                f"####################################################################################################",
-                file=f)
+            print(f"####################################################################################################",file=f)
             print(f"Epoch {epoch + 1}:", file=f)
             print(f"  - Avg Training Loss: {avg_loss:.4f}", file=f)
             print(f"  - Dev Precision: {precision:.4f}", file=f)
@@ -386,7 +384,7 @@ def infer(use_saved_model=True, best_model_state=None):
 
     # 5. 加载权重
     if use_saved_model:
-        model.load_state_dict(torch.load("best_model.pth"))
+        model.load_state_dict(torch.load("best_model_bilstm.pth"))
     else:
         model.load_state_dict(best_model_state)
 
@@ -509,7 +507,7 @@ if __name__ == "__main__":
 
     if choice == "1":
         best_model_state = train()
-        torch.save(best_model_state, "best_model.pth")
+        torch.save(best_model_state, "best_model_bilstm.pth")
     elif choice == "2":
         infer(use_saved_model=True)
     elif choice == "3":
