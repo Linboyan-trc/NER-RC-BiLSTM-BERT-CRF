@@ -76,27 +76,38 @@ def prepare_sentences_with_entity_merge(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         for line in f:
             doc = json.loads(line)
+
+            # 1. 句子列表
             sentences = doc['sentences']
+            all_sentences = []
+            for sentence in sentences:
+                all_sentences.extend(sentence)
+
+            # 2. 句子实体列表
             ner = doc['ner']
+            all_ner = []
+            for single_ner in ner:
+                all_ner.extend(single_ner)
 
-            for sentence_tokens, entities in zip(sentences, ner):
-                merged = []
-                idx = 0
-                entities = sorted(entities, key=lambda x: x[0])  # 按起始位置排序
+            # 3. sentence_tokens是单词列表，entities是[pos1, pos2, _]列表
+            # 3.1 当前句子
+            merged = []
 
-                for ent in entities:
-                    start, end, ent_type = ent  # 实体范围是 [start, end]
-                    if idx < start:
-                        merged.extend(sentence_tokens[idx:start])  # 非实体 token 加入
-                    entity_text = '_'.join(sentence_tokens[start:end+1])  # 实体合并为一个词
-                    merged.append(entity_text)
-                    idx = end + 1
+            # 3.2 [23,23,_]
+            idx = 0
+            for ent in all_ner:
+                start, end, _ = ent  # 实体范围是 [start, end]
+                if idx < start:
+                    merged.extend(all_sentences[idx:start])  # 非实体 token 加入
+                entity_text = ' '.join(all_sentences[start:end+1])  # 实体合并为一个词
+                merged.append(entity_text)
+                idx = end + 1
 
-                # 剩下的非实体 token 加入
-                if idx < len(sentence_tokens):
-                    merged.extend(sentence_tokens[idx:])
+            # 剩下的非实体 token 加入
+            if idx < len(all_sentences):
+                merged.extend(all_sentences[idx:])
 
-                merged_sentences.append(merged)
+            merged_sentences.append(merged)
 
     return merged_sentences
 
