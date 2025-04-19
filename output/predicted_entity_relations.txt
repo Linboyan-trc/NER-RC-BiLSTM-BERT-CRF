@@ -1,0 +1,974 @@
+Recognition of proper nouns	morphological analysis	USED-FOR
+proper nouns	Japanese text	USED-FOR
+morphological analysis	Japanese text processing	USED-FOR
+Japanese information extraction	It	USED-FOR
+approach	Multi-lingual Evaluation Task -LRB- MET -RRB-	USED-FOR
+Multi-lingual Evaluation Task -LRB- MET -RRB-	Japanese text	USED-FOR
+morphological analysis problem	task	USED-FOR
+Japanese	morphological analysis problem	USED-FOR
+morphological analyzer	recognition and classification of proper names , numerical and temporal expressions	USED-FOR
+Named Entity -LRB- NE -RRB- items	proper names , numerical and temporal expressions	USED-FOR
+Named Entity -LRB- NE -RRB- items	Japanese text	USED-FOR
+Amorph	NE items	USED-FOR
+dictionary lookup	Amorph	USED-FOR
+dictionary lookup	rule application	USED-FOR
+rule application	Amorph	USED-FOR
+dictionaries	it	USED-FOR
+dictionaries	Japanese character strings	USED-FOR
+dictionary lookup stage	rules	USED-FOR
+rules	NE items	USED-FOR
+priori geometric constraints	3 -- D stereo reconstruction scheme	USED-FOR
+image information	3 -- D shape	USED-FOR
+iterative deformation of a 3 -- D surface mesh	approach	USED-FOR
+iterative deformation of a 3 -- D surface mesh	objective function	USED-FOR
+anisotropic meshing	non-quadratic approach	USED-FOR
+anisotropic meshing	reconstruction	USED-FOR
+non-quadratic approach	regularization	USED-FOR
+non-quadratic approach	reconstruction	USED-FOR
+triangulations	reconstruction	USED-FOR
+Structural or numerical constraints	reconstruction process	USED-FOR
+constrained optimization scheme	Structural or numerical constraints	USED-FOR
+They	reconstruction	USED-FOR
+object shape	priori knowledge	USED-FOR
+them	3 -- D reconstruction	USED-FOR
+weakly supervised dependency parser	speech syntax	USED-FOR
+hand-crafted rules	syntactic knowledge	USED-FOR
+Bayesian inference	rules	USED-FOR
+them	complex tree structures	USED-FOR
+complex tree structures	discriminative model 's posterior	USED-FOR
+unlabeled corpus	discriminative model 's posterior	USED-FOR
+posterior	sparse se-lectional preferences	USED-FOR
+English and Czech newspaper texts	model	USED-FOR
+French broadcast news transcriptions	model	USED-FOR
+Listen-Communicate-Show -LRB- LCS -RRB-	human interaction with data sources	USED-FOR
+intelligent mobile agents	spoken language understanding system	USED-FOR
+approach	LCS-Marine	USED-FOR
+domain independent model	automated interpretation of nominal compounds	USED-FOR
+English	nominal compounds	USED-FOR
+model	productive rules of interpretation	USED-FOR
+morpho-syntactic and semantic characteristics	productive rules of interpretation	USED-FOR
+morpho-syntactic and semantic characteristics	nominal constituents	USED-FOR
+nominals	predicative information	USED-FOR
+generalizable semantic principles	domain-specific semantic information	USED-FOR
+model	interpretation of compounds	USED-FOR
+method	detecting interest points	USED-FOR
+histogram information	detecting interest points	USED-FOR
+pixel-wise differences in image intensity	interest point detectors	USED-FOR
+histogram-based representations	detectors	USED-FOR
+detectors	large-scale structures	USED-FOR
+detectors	distinctive textured patterns	USED-FOR
+detectors	rotation	USED-FOR
+detectors	illumination variation	USED-FOR
+detectors	blur	USED-FOR
+large-scale structures	distinctive textured patterns	USED-FOR
+rotation	illumination variation	USED-FOR
+illumination variation	blur	USED-FOR
+histogram-based interest point detectors	matching textured scenes	USED-FOR
+repeatability	histogram-based interest point detectors	USED-FOR
+repeatability	distinctiveness	USED-FOR
+distinctiveness	histogram-based interest point detectors	USED-FOR
+method	space-time interest point detection	USED-FOR
+space-time interest point detection	action classification	USED-FOR
+Plume	restricted domain parser	USED-FOR
+Plume 's approach	parsing	USED-FOR
+semantic caseframe instantiation	Plume 's approach	USED-FOR
+ungrammatical input	robustness	USED-FOR
+Plume	declarative and imperative utterances	USED-FOR
+it	passives	USED-FOR
+it	relative clauses	USED-FOR
+it	interrogatives	USED-FOR
+passives	relative clauses	USED-FOR
+relative clauses	interrogatives	USED-FOR
+Plume	passives	USED-FOR
+Plume	relative clauses	USED-FOR
+Plume	interrogatives	USED-FOR
+passives	relative clauses	USED-FOR
+relative clauses	interrogatives	USED-FOR
+unlexicalized parser	German	USED-FOR
+smoothing	unlexicalized parser	USED-FOR
+smoothing	suffix analysis	USED-FOR
+suffix analysis	unlexicalized parser	USED-FOR
+labelled bracket F-score	unlexicalized parser	USED-FOR
+NEGRA corpus	unlexicalized parser	USED-FOR
+accuracy	model	USED-FOR
+smoothing	unlexicalized parser	USED-FOR
+unsupervised learning approach	relations between named entities	USED-FOR
+lexical and syntactic features	unsupervised learning approach	USED-FOR
+It	submanifold	USED-FOR
+eigenvectors	It	USED-FOR
+adjacency graph 's Laplacian	eigenvectors	USED-FOR
+high dimensionality space	submanifold	USED-FOR
+cluster number estimation	It	USED-FOR
+cluster number estimation	eigenvectors	USED-FOR
+ACE corpora	spectral clustering based approach	USED-FOR
+ACE corpora	clustering methods	USED-FOR
+spectral clustering based approach	clustering methods	USED-FOR
+strings	structures	USED-FOR
+strings	trees	USED-FOR
+trees	structures	USED-FOR
+trees	dags	USED-FOR
+dags	structures	USED-FOR
+dags	graphs	USED-FOR
+graphs	structures	USED-FOR
+formalism	grammar formalisms	USED-FOR
+rewriting systems	grammar formalisms	USED-FOR
+rewriting systems	dependency grammars	USED-FOR
+dependency grammars	grammar formalisms	USED-FOR
+dependency grammars	TAG	USED-FOR
+TAG	grammar formalisms	USED-FOR
+TAG	HPSG	USED-FOR
+HPSG	grammar formalisms	USED-FOR
+HPSG	LFG	USED-FOR
+LFG	grammar formalisms	USED-FOR
+mixed-signal paradigm	high-resolution parallel inner-product computation	USED-FOR
+mixed-signal paradigm	kernels	USED-FOR
+kernels	image processing	USED-FOR
+high-density , low-power analog array	externally digital architecture	USED-FOR
+binary-binary partial matrix-vector multiplication	high-density , low-power analog array	USED-FOR
+random statistics	analog summation of binary products	USED-FOR
+random modulation scheme	near-Bernoulli statistics	USED-FOR
+highly correlated inputs	random modulation scheme	USED-FOR
+real image data	approach	USED-FOR
+projective unifocal , bifo-cal , and trifocal tensors	affine case	USED-FOR
+point correspondences	estimation of the tensors	USED-FOR
+factorization	tensors	USED-FOR
+line correspondences	estimation	USED-FOR
+corpus-based method	Noun Classifier Associations -LRB- NCA -RRB-	USED-FOR
+corpus-based method	classifier assignment	USED-FOR
+corpus-based method	semantic construction of noun phrase	USED-FOR
+Noun Classifier Associations -LRB- NCA -RRB-	classifier assignment	USED-FOR
+Noun Classifier Associations -LRB- NCA -RRB-	semantic construction of noun phrase	USED-FOR
+classifier assignment	semantic construction of noun phrase	USED-FOR
+concept hierarchy constraints	NCA	USED-FOR
+frequency of occurrences	NCA	USED-FOR
+images	perception of transparent objects	USED-FOR
+those	features	USED-FOR
+model-based approach	shapes and the poses of transparent objects	USED-FOR
+known motion	shapes and the poses of transparent objects	USED-FOR
+multiple layers	they	USED-FOR
+refractive indices	multiple layers	USED-FOR
+it	real scenes	USED-FOR
+it	shapes of the objects	USED-FOR
+transparent objects	real scenes	USED-FOR
+accuracy	shapes of the objects	USED-FOR
+probabilistic framework	visual models of 3D object categories	USED-FOR
+appearance information	probabilistic framework	USED-FOR
+appearance information	geometric constraints	USED-FOR
+geometric constraints	probabilistic framework	USED-FOR
+generative framework	model	USED-FOR
+model	mixture of viewpoints models	USED-FOR
+image	detection	USED-FOR
+image	classification	USED-FOR
+detection	classification	USED-FOR
+position	detection	USED-FOR
+position	classification	USED-FOR
+position	viewpoint	USED-FOR
+viewpoint	detection	USED-FOR
+viewpoint	classification	USED-FOR
+generative proba-bilistic framework	3D object categorization	USED-FOR
+algorithm	detection task	USED-FOR
+algorithm	viewpoint classification task	USED-FOR
+detection task	viewpoint classification task	USED-FOR
+PASCAL VOC 2006 datasets	algorithm	USED-FOR
+datasets	detection and viewpoint classification tasks	USED-FOR
+ambiguity packing and stochastic disambiguation techniques	Lexical-Functional Grammars -LRB- LFG -RRB-	USED-FOR
+ambiguity packing and stochastic disambiguation techniques	sentence condensation	USED-FOR
+linguistic parser/generator	system	USED-FOR
+linguistic parser/generator	LFG	USED-FOR
+linguistic parser/generator	transfer component	USED-FOR
+transfer component	system	USED-FOR
+transfer component	parse reduction	USED-FOR
+transfer component	maximum-entropy model	USED-FOR
+packed parse forests	parse reduction	USED-FOR
+maximum-entropy model	system	USED-FOR
+maximum-entropy model	stochastic output selection	USED-FOR
+parser evaluation methods	summarization quality	USED-FOR
+summarization quality	sentence condensation systems	USED-FOR
+summarization quality	automatic parse-based evaluation	USED-FOR
+automatic parse-based evaluation	manual evaluation	USED-FOR
+summarization quality	system	USED-FOR
+grammaticality	system	USED-FOR
+constraint-based parser/generator	system	USED-FOR
+robust principal component analysis -LRB- robust PCA -RRB- problem	machine learning applications	USED-FOR
+low rank part	data matrix	USED-FOR
+low rank part	sparse residual	USED-FOR
+sparse residual	data matrix	USED-FOR
+low rank plus sparse structure	approaches	USED-FOR
+information	robust PCA	USED-FOR
+side information	robust PCA	USED-FOR
+prior structure	features of entities	USED-FOR
+prior structure	recovery	USED-FOR
+features of entities	recovery	USED-FOR
+convex problem	side information	USED-FOR
+side information	robust PCA	USED-FOR
+method	low rank matrix	USED-FOR
+method	low rank matrices	USED-FOR
+features	robust PCA	USED-FOR
+noisy image classification	method	USED-FOR
+side information	method	USED-FOR
+demonstrative expressions	English	USED-FOR
+implications	discourse processing algorithms	USED-FOR
+anaphoric expressions	natural language generation system	USED-FOR
+IEMOCAP database	discrete -LRB- categorical -RRB- and continuous -LRB- attribute -RRB- emotional assessments	USED-FOR
+method	blind separation of underdetermined instantaneous mixtures of independent signals	USED-FOR
+nonstationarity	method	USED-FOR
+first-order autoregressive model	signals	USED-FOR
+model	blind separation of natural speech signals .	USED-FOR
+Cramér-Rao lower bound -RRB-	separation method	USED-FOR
+method	natural speech signals	USED-FOR
+method	methods	USED-FOR
+separation accuracy	method	USED-FOR
+separation accuracy	methods	USED-FOR
+methods	natural speech signals	USED-FOR
+convolution kernel over parse trees	syntactic structure information	USED-FOR
+syntactic structure information	relation extraction	USED-FOR
+syntactic structure features	parse tree	USED-FOR
+syntactic structure features	relation extraction	USED-FOR
+convolution tree kernel	features	USED-FOR
+ACE 2003 corpus	convolution kernel over parse trees	USED-FOR
+feature-based methods	convolution kernel over parse trees	USED-FOR
+method	dependency tree kernels	USED-FOR
+Combinatory Categorial Grammar -LRB- CCG -RRB- lexicon	Turkish dependency treebank	USED-FOR
+Turkish	agglutinating free word order language	USED-FOR
+compact lexicon	treebank	USED-FOR
+treebank	Penn WSJ	USED-FOR
+sentence extraction	summarization	USED-FOR
+detection of question-answer pairs	email summarization	USED-FOR
+email conversation	detection of question-answer pairs	USED-FOR
+features	lexical similarity	USED-FOR
+features	question-answer pairing	USED-FOR
+structure of email-threads	features	USED-FOR
+lexical similarity	discourse segments	USED-FOR
+prior on the distribution of natural images	support vector machines	USED-FOR
+SVMs	overfitting	USED-FOR
+real data sets	detector	USED-FOR
+detector	linear and kernel SVM	USED-FOR
+unified framework	reasoning	USED-FOR
+single-linkage	well-studied clustering techniques	USED-FOR
+single-linkage	sum-of-pairs	USED-FOR
+sum-of-pairs	well-studied clustering techniques	USED-FOR
+sum-of-pairs	k-means	USED-FOR
+k-means	well-studied clustering techniques	USED-FOR
+k-means	k-median	USED-FOR
+k-median	well-studied clustering techniques	USED-FOR
+PageRank algorithm	relevant approach	USED-FOR
+event map	PageRank algorithm	USED-FOR
+documents	event map	USED-FOR
+scanning method	dense sub-pixel camera-projector correspondence	USED-FOR
+zero-crossings	Subpixel accuracy	USED-FOR
+robustness	gray-level band-pass white noise patterns	USED-FOR
+indirect lighting	robustness	USED-FOR
+indirect lighting	scene discontinuities	USED-FOR
+scene discontinuities	robustness	USED-FOR
+method	scene geometry	USED-FOR
+subpixel precision	scene geometry	USED-FOR
+it	active reconstruction systems	USED-FOR
+mi-cro phase shifting	state of the art methods	USED-FOR
+mi-cro phase shifting	modulated phase shifting	USED-FOR
+modulated phase shifting	state of the art methods	USED-FOR
+system	acquiring adjectival subcategorization frames -LRB- scfs -RRB-	USED-FOR
+decision-tree classifier	system	USED-FOR
+decision-tree classifier	grammatical relations -LRB- grs -RRB-	USED-FOR
+pattern-matching language	It	USED-FOR
+pattern-matching language	grs	USED-FOR
+precision	system	USED-FOR
+precision	recall	USED-FOR
+recall	system	USED-FOR
+tool	linguistic annotation of scfs	USED-FOR
+training and test data	subcategorization acquisition	USED-FOR
+Machine transliteration/back-transliteration	multilingual speech and language applications	USED-FOR
+framework	machine transliteration/backtransliteration	USED-FOR
+machine transliteration/backtransliteration	direct orthographical mapping -LRB- DOM -RRB-	USED-FOR
+framework	joint source-channel transliteration model	USED-FOR
+n-gram transliteration model -LRB- n-gram TM -RRB-	transliteration process	USED-FOR
+transliteration/backtransliteration	methods	USED-FOR
+transliteration/backtransliteration	English/Chinese and English/Japanese language pairs	USED-FOR
+transliteration accuracy	method	USED-FOR
+bio-inspired model	analog programmable array processor -LRB- APAP -RRB-	USED-FOR
+bio-inspired model	complex programmable spatio-temporal dynamics	USED-FOR
+vertebrate retina	bio-inspired model	USED-FOR
+complex programmable spatio-temporal dynamics	VLSI	USED-FOR
+visual pathway	images	USED-FOR
+Computing power per area	power consumption	USED-FOR
+ambiguity	determiners	USED-FOR
+logical formalism	determiners	USED-FOR
+verbal and nonverbal means	grounding	USED-FOR
+design	embodied conversational agents	USED-FOR
+common ground	human-computer interaction	USED-FOR
+eye gaze	head nods	USED-FOR
+eye gaze	direction-giving task	USED-FOR
+head nods	attentional focus	USED-FOR
+head nods	direction-giving task	USED-FOR
+attentional focus	direction-giving task	USED-FOR
+verbal and nonverbal grounding acts	ECA	USED-FOR
+verbal and nonverbal grounding acts	dialogue state	USED-FOR
+Sentence boundary detection	speech recognition output	USED-FOR
+speech	Sentence boundary detection	USED-FOR
+hidden Markov model -LRB- HMM -RRB- and maximum entropy -LRB- Maxent -RRB- classifiers	detecting sentence boundaries	USED-FOR
+textual and prosodic knowledge sources	hidden Markov model -LRB- HMM -RRB- and maximum entropy -LRB- Maxent -RRB- classifiers	USED-FOR
+conditional random field -LRB- CRF -RRB-	task	USED-FOR
+corpora	human transcriptions	USED-FOR
+corpora	speech recognition output	USED-FOR
+conversational telephone speech	corpora	USED-FOR
+conversational telephone speech	broadcast news speech	USED-FOR
+broadcast news speech	corpora	USED-FOR
+human transcriptions	speech recognition output	USED-FOR
+CRF model	HMM and Max-ent models	USED-FOR
+error rate	CRF model	USED-FOR
+error rate	HMM and Max-ent models	USED-FOR
+NIST sentence boundary detection task	CRF model	USED-FOR
+NIST sentence boundary detection task	HMM and Max-ent models	USED-FOR
+speech	NIST sentence boundary detection task	USED-FOR
+classifiers	three-way voting	USED-FOR
+model	knowledge sources	USED-FOR
+approach	camera handoff in wide-area surveillance scenarios	USED-FOR
+geometric , appearance , or correlation-based information	approaches	USED-FOR
+logistic softmax function of covariance-based region features	Multiple Instance Learning -LRB- MIL -RRB- formulation	USED-FOR
+MAP estimation framework	Multiple Instance Learning -LRB- MIL -RRB- formulation	USED-FOR
+approach	outdoor surveillance settings	USED-FOR
+approach	state-of-the-art approaches	USED-FOR
+multiple PTZ camera sequences	approach	USED-FOR
+specialized regression problem	sampling probabilities	USED-FOR
+sampling probabilities	records	USED-FOR
+records	databases	USED-FOR
+aggregate queries	records	USED-FOR
+principled and provable solution	problem	USED-FOR
+hard budget constraints	cost zero solution	USED-FOR
+uniform sampling	stratified sampling	USED-FOR
+probabilistic context-free grammar	probabilistic finite automaton	USED-FOR
+closed-form -LRB- analytical -RRB- solution	Kullback-Leibler distance	USED-FOR
+closed-form -LRB- analytical -RRB- solution	cross-entropy	USED-FOR
+cross-entropy	Kullback-Leibler distance	USED-FOR
+distributional approximation	probabilistic context-free grammars	USED-FOR
+probabilistic finite automata	distributional approximation	USED-FOR
+illumination	pose invariance	USED-FOR
+illumination	face recognition	USED-FOR
+pose invariance	face recognition	USED-FOR
+lighting	pose	USED-FOR
+pose	user motion pattern	USED-FOR
+resolution	face images	USED-FOR
+photometric model	image formation	USED-FOR
+photometric model	statistical model	USED-FOR
+statistical model	generic face appearance variation	USED-FOR
+statistical model	extreme illumination changes	USED-FOR
+smoothness	geodesically local appearance manifold structure	USED-FOR
+geodesically local appearance manifold structure	robust same-identity likelihood	USED-FOR
+robustness	video sequence '' reillumination '' algorithm	USED-FOR
+face motion patterns	robustness	USED-FOR
+face motion patterns	video	USED-FOR
+method	fully automatic recognition system	USED-FOR
+video sequences	fully automatic recognition system	USED-FOR
+illumination	video sequences	USED-FOR
+illumination	pose	USED-FOR
+pose	video sequences	USED-FOR
+pose	head motion variation	USED-FOR
+head motion variation	video sequences	USED-FOR
+data set	system	USED-FOR
+system	commercial software	USED-FOR
+system	methods	USED-FOR
+recognition rate	system	USED-FOR
+commercial software	methods	USED-FOR
+Minimum Bayes-Risk -LRB- MBR -RRB- decoding	statistical machine translation	USED-FOR
+loss functions	translation	USED-FOR
+linguistic information	loss functions	USED-FOR
+word-to-word alignments	loss functions	USED-FOR
+word-to-word alignments	MT system	USED-FOR
+syntactic structure	loss functions	USED-FOR
+parse-trees	syntactic structure	USED-FOR
+MBR decoders	Chinese-to-English translation task	USED-FOR
+MBR decoding	statistical MT	USED-FOR
+MBR decoding	loss functions	USED-FOR
+approaches	evaluation of Natural Language systems	USED-FOR
+approaches	systems	USED-FOR
+systems	task	USED-FOR
+data retrieval	task	USED-FOR
+Wizard of Oz technique	NL requirements	USED-FOR
+Wizard of Oz technique	task	USED-FOR
+task dialogues	prototype Natural Language system	USED-FOR
+technique	task dialogues	USED-FOR
+Bayesian Network	addressee identification in four-participants face-to-face meetings	USED-FOR
+Naive Bayes classifiers	addressee identification in four-participants face-to-face meetings	USED-FOR
+Naive Bayes classifiers	Bayesian Network	USED-FOR
+gaze	addressee of a dialogue act	USED-FOR
+gaze	utterance	USED-FOR
+utterance	addressee of a dialogue act	USED-FOR
+utterance	conversational context features	USED-FOR
+conversational context features	addressee of a dialogue act	USED-FOR
+conversational context	classifiers	USED-FOR
+conversational context	utterance features	USED-FOR
+utterance features	classifiers	USED-FOR
+speaker 's gaze information	classifiers	USED-FOR
+speaker 's gaze information	utterance features	USED-FOR
+class-oriented framework	compositional classes of paraphrases	USED-FOR
+class-oriented framework	paraphrase examples	USED-FOR
+automatic candidate generation	sentential paraphrases	USED-FOR
+automatic candidate generation	manual judgement	USED-FOR
+manual judgement	sentential paraphrases	USED-FOR
+automated evaluation techniques	evaluation of human language learners	USED-FOR
+evaluation techniques	human language learning process	USED-FOR
+evaluation techniques	translation process	USED-FOR
+evaluation techniques	machine translation systems	USED-FOR
+human language learning process	translation process	USED-FOR
+translation process	machine translation systems	USED-FOR
+language learning	assessors	USED-FOR
+machine translation outputs	expert human translations	USED-FOR
+expert human translation	machine translation	USED-FOR
+machine learning approach	bare slice disambiguation	USED-FOR
+dialogue	bare slice disambiguation	USED-FOR
+corpus-based sample	heuristic principles	USED-FOR
+probabilistic Horn clauses	heuristic principles	USED-FOR
+SLIPPER	rule-based learning algorithm	USED-FOR
+rule-based learning algorithm	machine learning algorithms	USED-FOR
+rule-based learning algorithm	memory-based system	USED-FOR
+TiMBL	memory-based system	USED-FOR
+memory-based system	machine learning algorithms	USED-FOR
+features	heuristic principles	USED-FOR
+evaluation criterion	word similarity measures	USED-FOR
+meaning-entailing substitutability	semantic-oriented NLP applications	USED-FOR
+human agreement	meaning-entailing substitutability	USED-FOR
+semantic criterion	distributional word feature vectors	USED-FOR
+distributional word feature vectors	word similarity	USED-FOR
+measure	feature vector quality	USED-FOR
+feature weighting and selection function	feature vectors	USED-FOR
+feature weighting and selection function	word similarity	USED-FOR
+feature vectors	word similarity	USED-FOR
+motion estimation	object recognition	USED-FOR
+technique	detecting reflections in image sequences	USED-FOR
+motion trajectories	technique	USED-FOR
+feature points	motion trajectories	USED-FOR
+It	reflection	USED-FOR
+detectors	detector	USED-FOR
+priors	sparse and dense detection maps	USED-FOR
+pathological motion	occlusion	USED-FOR
+2D point correspondences	reconstructing the motion of a 3D articulated tree	USED-FOR
+trajectory basis	smooth motion	USED-FOR
+time complexity	hard combinatorial problem	USED-FOR
+Branch and bound strategies	complexity	USED-FOR
+global optimality	Branch and bound strategies	USED-FOR
+they	exhaustive search	USED-FOR
+affine projection	reconstruction	USED-FOR
+Topical blog post retrieval	ranking blog posts	USED-FOR
+relevance	blog posts	USED-FOR
+textual credibility indicators	topical blog post retrieval	USED-FOR
+textual credibility indicators	retrieval process	USED-FOR
+them	retrieval approach	USED-FOR
+language models	them	USED-FOR
+TREC Blog track test set	credibility indicators	USED-FOR
+retrieval effectiveness	credibility indicators	USED-FOR
+game records of expert players	board game of Go	USED-FOR
+distribution	computer Go	USED-FOR
+It	move selector	USED-FOR
+It	move sorter	USED-FOR
+It	training tool	USED-FOR
+move selector	move sorter	USED-FOR
+move selector	game tree search	USED-FOR
+move sorter	game tree search	USED-FOR
+training tool	Go players	USED-FOR
+pattern extraction scheme	method	USED-FOR
+pattern extraction scheme	Bayesian learning algorithm	USED-FOR
+Bayesian learning algorithm	method	USED-FOR
+expert games	system	USED-FOR
+approach	automatically acquiring English topic signatures	USED-FOR
+Topic signatures	Natural Language Processing -LRB- NLP -RRB- applications	USED-FOR
+Topic signatures	Word Sense Disambiguation -LRB- WSD -RRB-	USED-FOR
+Topic signatures	Text Summarisation	USED-FOR
+Word Sense Disambiguation -LRB- WSD -RRB-	Natural Language Processing -LRB- NLP -RRB- applications	USED-FOR
+Word Sense Disambiguation -LRB- WSD -RRB-	Text Summarisation	USED-FOR
+Text Summarisation	Natural Language Processing -LRB- NLP -RRB- applications	USED-FOR
+Chinese text	corpora	USED-FOR
+Chinese text	Web	USED-FOR
+corpora	Web	USED-FOR
+WSD task	topic signatures	USED-FOR
+WSD datasets	second-order vector cooccurrence algorithm	USED-FOR
+Joint matrix triangularization	joint eigenstructure	USED-FOR
+joint eigenstructure	signal processing	USED-FOR
+joint eigenstructure	machine learning	USED-FOR
+signal processing	machine learning	USED-FOR
+approximate joint triangularizer	exact joint triangularizer	USED-FOR
+posteriori bound	joint matrix decomposition	USED-FOR
+psycholinguistic literature	syntactic priming	USED-FOR
+method	priming	USED-FOR
+priming	incremental probabilistic parser	USED-FOR
+parallel structures	human data	USED-FOR
+Learned confidence measures	outlier removal	USED-FOR
+Learned confidence measures	quality improvement	USED-FOR
+outlier removal	quality improvement	USED-FOR
+outlier removal	stereo vision	USED-FOR
+quality improvement	stereo vision	USED-FOR
+manual interaction	task	USED-FOR
+manual interaction	active sensing devices	USED-FOR
+active sensing devices	task	USED-FOR
+active sensing devices	synthetic scenes	USED-FOR
+synthetic scenes	task	USED-FOR
+view points	approach	USED-FOR
+approach	learned confidence measures	USED-FOR
+KITTI2012 dataset	learned confidence measures	USED-FOR
+automatically generated training data	them	USED-FOR
+laser ground truth data	automatically generated training data	USED-FOR
+learning in autonomous agents	domain-speciic models of actions	USED-FOR
+planning systems	domain-speciic models of actions	USED-FOR
+action model formalism	methods	USED-FOR
+action model formalism	re-active agent	USED-FOR
+noise-handling mechanisms	methods	USED-FOR
+GOLEM	action models	USED-FOR
+simulated construction	integrated learning system	USED-FOR
+simulated construction	ooce domains	USED-FOR
+ooce domains	integrated learning system	USED-FOR
+FERRET	interactive question-answering -LRB- Q/A -RRB- system	USED-FOR
+FERRET	integrating automatic Q/A applications into real-world environments	USED-FOR
+approach	FERRET	USED-FOR
+approach	Q/A	USED-FOR
+training resources	automatic abstracting systems	USED-FOR
+annotation scheme	scientific articles	USED-FOR
+annotation scheme	resource	USED-FOR
+rhetorical moves of argumentation	scheme	USED-FOR
+images	automated segmentation	USED-FOR
+method	shape constrained image segmentation	USED-FOR
+mixtures of feature distributions	method	USED-FOR
+mixtures of feature distributions	color	USED-FOR
+mixtures of feature distributions	texture	USED-FOR
+mixtures of feature distributions	probabilistic shape knowledge	USED-FOR
+color	texture	USED-FOR
+texture	probabilistic shape knowledge	USED-FOR
+approach	robust-ness requirement in image understanding	USED-FOR
+Bayesian statistics	approach	USED-FOR
+natural language environment	human-machine interactions	USED-FOR
+reference problems	miscommunication	USED-FOR
+techniques	failures of reference	USED-FOR
+system combination	unsupervised WSD	USED-FOR
+voting - and arbiter-based combination strategies	unsupervised WSD systems	USED-FOR
+predominant senses	combination methods	USED-FOR
+raw text	predominant senses	USED-FOR
+SemCor and Senseval-3 data sets	ensembles	USED-FOR
+SemCor and Senseval-3 data sets	state-of-the-art	USED-FOR
+supervised training data	information extraction techniques	USED-FOR
+classified advertisements	field structured extraction tasks	USED-FOR
+classified advertisements	bibliographic citations	USED-FOR
+bibliographic citations	field structured extraction tasks	USED-FOR
+prior knowledge	field structured extraction tasks	USED-FOR
+hidden Markov models -LRB- HMMs -RRB-	generative model	USED-FOR
+generative model	field structured text	USED-FOR
+unsupervised methods	supervised methods	USED-FOR
+accuracies	unsupervised methods	USED-FOR
+accuracies	supervised methods	USED-FOR
+unlabeled examples	unsupervised methods	USED-FOR
+labeled examples	supervised methods	USED-FOR
+labeled data	semi-supervised methods	USED-FOR
+Chat-80	natural language question answering system	USED-FOR
+Prolog	system	USED-FOR
+Prolog	programming language	USED-FOR
+logic	programming language	USED-FOR
+extraposition grammars	logic-based grammar formalism	USED-FOR
+extraposition grammars	Chat-80	USED-FOR
+planning algorithm	logical expression	USED-FOR
+relational database	query optimisation	USED-FOR
+well-segmented 3D skeleton data	Human action recognition	USED-FOR
+Online action detection	action type	USED-FOR
+Online action detection	action positions	USED-FOR
+action type	action positions	USED-FOR
+untrimmed stream	Online action detection	USED-FOR
+streaming skeleton data	online action detection	USED-FOR
+multi-task end-to-end Joint Classification-Regression Recurrent Neural Network	action type	USED-FOR
+multi-task end-to-end Joint Classification-Regression Recurrent Neural Network	temporal localiza-tion information	USED-FOR
+action type	temporal localiza-tion information	USED-FOR
+joint classification and regression optimization objective	network	USED-FOR
+deep Long Short-Term Memory -LRB- LSTM -RRB- subnetwork	model	USED-FOR
+long-range temporal dynamics	model	USED-FOR
+streaming video dataset	model	USED-FOR
+dataset	G3D dataset	USED-FOR
+machine translation -LRB- MT -RRB- evaluation	sentence-level semantic equivalence classification	USED-FOR
+MT evaluation methods	classifiers	USED-FOR
+BLEU	MT evaluation methods	USED-FOR
+BLEU	NIST	USED-FOR
+NIST	MT evaluation methods	USED-FOR
+NIST	WER	USED-FOR
+WER	MT evaluation methods	USED-FOR
+WER	PER	USED-FOR
+PER	MT evaluation methods	USED-FOR
+classifiers	semantic equivalence	USED-FOR
+classifiers	entailment	USED-FOR
+semantic equivalence	entailment	USED-FOR
+PER	classification method	USED-FOR
+PER	part of speech information	USED-FOR
+part of speech information	word matches and non-matches	USED-FOR
+MT evaluation techniques	features	USED-FOR
+MT evaluation techniques	paraphrase classification	USED-FOR
+MT evaluation techniques	entailment	USED-FOR
+paraphrase classification	entailment	USED-FOR
+technique	models	USED-FOR
+paraphrase classification accuracy	technique	USED-FOR
+paraphrase classification accuracy	models	USED-FOR
+numerical optimization problem	visual object tracking	USED-FOR
+local optimization	local mode of the similarity measure	USED-FOR
+parameter space of translation , rotation and scale	local mode of the similarity measure	USED-FOR
+Kalman filter	prediction techniques	USED-FOR
+global optimization problem	object detection	USED-FOR
+Adaptive Simulated Annealing -LRB- ASA -RRB-	it	USED-FOR
+method	exhaustive search	USED-FOR
+ASA	Monte Carlo approach	USED-FOR
+ASA	local deterministic search	USED-FOR
+cluster analysis	sampled parameter space	USED-FOR
+cluster analysis	local tracker	USED-FOR
+airborne videos	numerical hybrid local and global mode-seeking tracker	USED-FOR
+heavy occlusion	airborne videos	USED-FOR
+heavy occlusion	camera motions	USED-FOR
+camera motions	airborne videos	USED-FOR
+state-of-the-art trackers	approach	USED-FOR
+VIVID benchmark datasets	approach	USED-FOR
+VIVID benchmark datasets	state-of-the-art trackers	USED-FOR
+Techniques	automatically training modules	USED-FOR
+automatically training modules	natural language generator	USED-FOR
+utterances	trainable components	USED-FOR
+utterances	hand-crafted template-based or rule-based approaches	USED-FOR
+trainable components	hand-crafted template-based or rule-based approaches	USED-FOR
+trainable sentence planner	spoken dialogue system	USED-FOR
+subjective human judgments	trainable sentence planner	USED-FOR
+hand-crafted template-based generation component	rule-based sentence planners	USED-FOR
+rule-based sentence planners	baseline sentence planners	USED-FOR
+trainable sentence planner	rule-based systems	USED-FOR
+trainable sentence planner	baselines	USED-FOR
+trainable sentence planner	hand-crafted system	USED-FOR
+rule-based systems	baselines	USED-FOR
+baselines	hand-crafted system	USED-FOR
+algorithm	novel view generation	USED-FOR
+novel view generation	one-to-one teleconferencing applications	USED-FOR
+cameras	video streams	USED-FOR
+algorithm	eye contact	USED-FOR
+virtual camera	images	USED-FOR
+arbitrary position	virtual camera	USED-FOR
+technique	novel-view generation	USED-FOR
+dynamic-programming , stereo algorithm	technique	USED-FOR
+three-plane graph	dense-stereo dynamic-programming	USED-FOR
+dense-stereo dynamic-programming	occlusion labeling	USED-FOR
+compact geometric derivation	novel-view synthesis	USED-FOR
+direct projection of the minimum-cost surface	compact geometric derivation	USED-FOR
+algorithm	temporal maintenance of a background model	USED-FOR
+algorithm	rendering of occlusions	USED-FOR
+algorithm	temporal artefacts -LRB- flicker -RRB-	USED-FOR
+cost aggregation algorithm	algorithm	USED-FOR
+cost aggregation algorithm	three-dimensional matching cost space	USED-FOR
+robustness	algorithm	USED-FOR
+algorithm	spatial and temporal artefacts	USED-FOR
+spatial and temporal artefacts	long stereo video streams	USED-FOR
+translating virtual camera	synthesis	USED-FOR
+semantic constraints	anaphora references	USED-FOR
+semantic constraints	syntactic ambiguities	USED-FOR
+anaphora references	syntactic ambiguities	USED-FOR
+cooccurrence statistics	disambiguation tool	USED-FOR
+method	discovering parallel sentences	USED-FOR
+comparable , non-parallel corpora	discovering parallel sentences	USED-FOR
+approach	parallel data	USED-FOR
+parallel data	Chinese , Arabic , and English non-parallel newspaper corpora	USED-FOR
+it	statistical machine translation system	USED-FOR
+parallel corpus	MT system	USED-FOR
+parallel corpus	non-parallel corpus	USED-FOR
+non-parallel corpus	MT system	USED-FOR
+scarce resources	method	USED-FOR
+search procedure	statistical machine translation -LRB- MT -RRB-	USED-FOR
+dynamic programming -LRB- DP -RRB-	statistical machine translation -LRB- MT -RRB-	USED-FOR
+technique	search algorithm	USED-FOR
+Verbmobil task	limited-domain spoken-language task	USED-FOR
+correctness proof	LR-parsers	USED-FOR
+recursive descent parser	It	USED-FOR
+time-complexity	parser	USED-FOR
+parser	non-LR grammars	USED-FOR
+memo-functions	parser	USED-FOR
+Memo-functions	parse forest	USED-FOR
+algorithm	LR -LRB- 0 -RRB- grammars	USED-FOR
+algorithm	recursive ascent parsers	USED-FOR
+regular expressions	grammars	USED-FOR
+LR-parser	Extended CF grammars	USED-FOR
+LR-parser	CF grammars	USED-FOR
+components	discourse structure	USED-FOR
+linguistic structure	components	USED-FOR
+linguistic structure	intentional structure	USED-FOR
+intentional structure	components	USED-FOR
+intentional structure	attentional state	USED-FOR
+attentional state	components	USED-FOR
+intentional structure	discourse-relevant purposes	USED-FOR
+cue phrases	discourse phenomena	USED-FOR
+cue phrases	referring expressions	USED-FOR
+referring expressions	discourse phenomena	USED-FOR
+referring expressions	interruptions	USED-FOR
+interruptions	discourse phenomena	USED-FOR
+Tree Adjoining Grammars	grammatical formalisms	USED-FOR
+Tree Adjoining Grammars	Head Grammars	USED-FOR
+Head Grammars	grammatical formalisms	USED-FOR
+linguistic expressiveness	formalisms	USED-FOR
+dependency-based grammar model	sentence-level and text-level anaphora	USED-FOR
+Criteria	anaphora resolution within sentence boundaries	USED-FOR
+GB 's binding theory	Criteria	USED-FOR
+those	text-level anaphora	USED-FOR
+Grosz-Sidner-style focus model	those	USED-FOR
+Coedition	text revision	USED-FOR
+natural language text	Coedition	USED-FOR
+graph	UNL-L0 deconverter	USED-FOR
+resources	liaisons	USED-FOR
+LO-English or better a L0-UNL dictionary	resources	USED-FOR
+LO-English or better a L0-UNL dictionary	morphosyntactic parser of L0	USED-FOR
+morphosyntactic parser of L0	resources	USED-FOR
+morphosyntactic parser of L0	canonical graph2tree transformation	USED-FOR
+canonical graph2tree transformation	resources	USED-FOR
+UNL-tree + L0	MS-L0 structure	USED-FOR
+dictionary	lattice	USED-FOR
+pivot MT	interactive MT	USED-FOR
+interactive MT	multilingual text authoring	USED-FOR
+multilingual corpus	analogies	USED-FOR
+loss	Mahalanobis distance	USED-FOR
+weighted sum	precision	USED-FOR
+weighted rank loss	computer vision	USED-FOR
+weighted rank loss	person re-identification	USED-FOR
+person re-identification	computer vision	USED-FOR
+Weighted Approximate Rank Component Analysis -LRB- WARCA -RRB-	metric learning formulation	USED-FOR
+stochastic gradient descent algorithm	learning problem	USED-FOR
+kernel trick	non-linear extension of WARCA	USED-FOR
+Kernel space embedding	inarbitrary distance measures	USED-FOR
+matrix rank degeneration	non-isolated minima	USED-FOR
+matrix rank degeneration	low-rank matrix optimization	USED-FOR
+non-isolated minima	low-rank matrix optimization	USED-FOR
+regularizer	low-rank matrix optimization	USED-FOR
+regularizer	or-thonormality	USED-FOR
+or-thonormality	learned matrix	USED-FOR
+person re-identification datasets	method	USED-FOR
+scale Market-1501	person re-identification datasets	USED-FOR
+CUHK03 datasets	person re-identification datasets	USED-FOR
+CUHK03 datasets	scale Market-1501	USED-FOR
+word list	language model adaptation methods	USED-FOR
+word list	raw corpus	USED-FOR
+raw corpus	language model adaptation methods	USED-FOR
+method	raw corpus	USED-FOR
+word list	method	USED-FOR
+segmented corpus	model	USED-FOR
+methods	preparing a segmented corpus	USED-FOR
+speech recognition accuracies	language models	USED-FOR
+discrete data	modeling problems	USED-FOR
+multinomial or categorical distributions	modeling problems	USED-FOR
+multinomial distributions	nucleotides in a DNA sequence	USED-FOR
+multinomial distributions	text documents	USED-FOR
+logistic stick-breaking representation	multinomial distribution	USED-FOR
+Pólya-gamma augmentation	multinomial distribution	USED-FOR
+latent variables	multinomial distribution	USED-FOR
+jointly Gaussian likelihoods	latent variables	USED-FOR
+Bayesian inference techniques	Gaussian models	USED-FOR
+minimal overhead	Gaussian models	USED-FOR
+MINPRAN	robust operator	USED-FOR
+techniques	large outlier percentages	USED-FOR
+techniques	MINPRAN	USED-FOR
+random sampling	MINPRAN	USED-FOR
+synthetic data	MINPRAN	USED-FOR
+least median of squares	MINPRAN	USED-FOR
+MINPRAN	complex range	USED-FOR
+MINPRAN	intensity data	USED-FOR
+context-free phrase structure rules	Metagrammatical formalisms	USED-FOR
+context-free phrase structure rules	metarules -LRB- MPS grammars -RRB-	USED-FOR
+metarules -LRB- MPS grammars -RRB-	Metagrammatical formalisms	USED-FOR
+computational tractability and explanatory adequacy	them	USED-FOR
+TAGs	semantic interpretation	USED-FOR
+TAGs	automatic translation of natural language	USED-FOR
+semantic interpretation	automatic translation of natural language	USED-FOR
+logical form language	semantics	USED-FOR
+TAGs	syntax proper	USED-FOR
+model-based approach	on-line cursive handwriting analysis and recognition	USED-FOR
+model	on-line handwriting	USED-FOR
+on-line handwriting	cycloidal pen motion	USED-FOR
+cycloidal motion parameters	arbitrary handwriting	USED-FOR
+discrete motor control representation	continuous pen motion	USED-FOR
+motor control representation	word spotting	USED-FOR
+motor control representation	matching of cursive scripts	USED-FOR
+word spotting	matching of cursive scripts	USED-FOR
+dynamic representation	cursive handwriting recognition	USED-FOR
+categorization of objects	Object Recognition task	USED-FOR
+categorization of objects	estimating object pose	USED-FOR
+estimating object pose	Object Recognition task	USED-FOR
+view-invariant representation	former	USED-FOR
+representation	latter	USED-FOR
+representation	pose information	USED-FOR
+deep archi-tectures	object category recognition	USED-FOR
+approaches	object pose estimation	USED-FOR
+Convolutional Neural Networks -LRB- CNN -RRB- architectures	object recognition	USED-FOR
+Convolutional Neural Networks -LRB- CNN -RRB- architectures	pose estimation	USED-FOR
+object recognition	pose estimation	USED-FOR
+layers	CNN models	USED-FOR
+layers of distributed representations	CNNs	USED-FOR
+layers of distributed representations	object pose information	USED-FOR
+this	object category representations	USED-FOR
+It	empirical MT research	USED-FOR
+geometric structures of 3D lines	light field triangulation	USED-FOR
+geometric structures of 3D lines	stereo matching	USED-FOR
+ray space	geometric structures of 3D lines	USED-FOR
+light field triangulation	stereo matching	USED-FOR
+triangulation	piecewise-linear interpolant	USED-FOR
+piecewise-linear interpolant	light field super-resolution	USED-FOR
+synthetic and real data	triangulation and LAGC algorithms	USED-FOR
+synthetic and real data	state-of-the-art solutions	USED-FOR
+triangulation and LAGC algorithms	state-of-the-art solutions	USED-FOR
+accuracy	triangulation and LAGC algorithms	USED-FOR
+accuracy	state-of-the-art solutions	USED-FOR
+visual quality	triangulation and LAGC algorithms	USED-FOR
+visual quality	state-of-the-art solutions	USED-FOR
+non-contiguous phrases	phrase-based statistical machine translation method	USED-FOR
+method	phrases	USED-FOR
+word-aligned corpora	method	USED-FOR
+statistical translation model	phrases	USED-FOR
+maximization of translation accuracy	training method	USED-FOR
+NIST evaluation metric	statistical translation model	USED-FOR
+beam-search decoder	Translations	USED-FOR
+GLOSSER	reading and learning	USED-FOR
+language pairs	GLOSSER	USED-FOR
+English-Bulgarian	language pairs	USED-FOR
+English-Bulgarian	English-Estonian	USED-FOR
+English-Estonian	language pairs	USED-FOR
+English-Estonian	English-Hungarian	USED-FOR
+English-Hungarian	language pairs	USED-FOR
+English-Hungarian	French-Dutch	USED-FOR
+French-Dutch	language pairs	USED-FOR
+components	intelligent computer-assisted morphological analysis -LRB- ICALL -RRB-	USED-FOR
+disambiguated morphological analysis	components	USED-FOR
+disambiguated morphological analysis	lemmatized indexing	USED-FOR
+disambiguated morphological analysis	aligned bilingual corpus	USED-FOR
+lemmatized indexing	components	USED-FOR
+lemmatized indexing	aligned bilingual corpus	USED-FOR
+tag contexts	part-of-speech tagger	USED-FOR
+dependency network representation	tag contexts	USED-FOR
+lexical features	part-of-speech tagger	USED-FOR
+priors in conditional loglinear models	part-of-speech tagger	USED-FOR
+fine-grained modeling of unknown word features	part-of-speech tagger	USED-FOR
+accuracy	tagger	USED-FOR
+Penn Treebank WSJ	tagger	USED-FOR
+error	tagger	USED-FOR
+highly-curved manifolds	pedestrian data	USED-FOR
+feature space	highly-curved manifolds	USED-FOR
+convolutional neural networks -LRB- CNN -RRB-	feature extraction	USED-FOR
+Euclidean distance	deep embedding methods	USED-FOR
+Euclidean distance	manifold learning methods	USED-FOR
+Euclidean distance	graphical relationship	USED-FOR
+Euclidean distance	geodesic distance	USED-FOR
+local range	Euclidean distance	USED-FOR
+graphical relationship	geodesic distance	USED-FOR
+intra-class variations	data	USED-FOR
+moderate positive sample mining method	robust CNN	USED-FOR
+robust CNN	person re-identification	USED-FOR
+metric weight constraint	learning	USED-FOR
+generalization ability	learned metric	USED-FOR
+robust deep metrics	person re-identification	USED-FOR
+deep model	state-of-the-art methods	USED-FOR
+deep model	person re-identification	USED-FOR
+state-of-the-art methods	person re-identification	USED-FOR
+deep models	person re-identification	USED-FOR
+Utterance Verification -LRB- UV -RRB-	Automatic Speech Recognition -LRB- ASR -RRB- System	USED-FOR
+Confidence tests	decoded string hypotheses	USED-FOR
+noises	OOV words	USED-FOR
+ASR system	Word Spotting	USED-FOR
+ASR system	Noise Spotting capabilities	USED-FOR
+confidence tests	UV procedure	USED-FOR
+confidence tests	hierarchical structure	USED-FOR
+two	confidence tests	USED-FOR
+acoustic measures	two	USED-FOR
+one	confidence tests	USED-FOR
+linguistic information	one	USED-FOR
+natural number recognition task	telephone application	USED-FOR
+recognition errors	natural number recognition task	USED-FOR
+encoding sound	neuronal processing	USED-FOR
+discrete nerve-action potentials	analog pressure wave	USED-FOR
+pool models	inner hair cell synapse	USED-FOR
+visual inspection	automatic speech recognition -LRB- ASR -RRB-	USED-FOR
+visual inspection	offset adaptation -LRB- OA -RRB- model	USED-FOR
+automatic speech recognition -LRB- ASR -RRB-	offset adaptation -LRB- OA -RRB- model	USED-FOR
+OA	phase locking in the auditory nerve -LRB- AN -RRB-	USED-FOR
+OA	features	USED-FOR
+ASR accuracy	features	USED-FOR
+AN fibers -LRB- ANFs -RRB-	features	USED-FOR
+OA	auditory processing	USED-FOR
+onset neurons -LRB- ONs -RRB-	OA	USED-FOR
+Multi-layer perceptrons -LRB- MLPs -RRB-	Gaussian mixture models -LRB- GMMs -RRB-	USED-FOR
+Multi-layer perceptrons -LRB- MLPs -RRB-	ANF-based and ON-based auditory features	USED-FOR
+Gaussian mixture models -LRB- GMMs -RRB-	ANF-based and ON-based auditory features	USED-FOR
+high-capacity models	computer vision	USED-FOR
+large datasets	high-capacity models	USED-FOR
+pixel-level labels	large datasets	USED-FOR
+approach	pixel-accurate semantic label maps	USED-FOR
+pixel-accurate semantic label maps	images	USED-FOR
+images	modern computer games	USED-FOR
+partial scene segmentation	unsupervised seg-mentation of whole objects	USED-FOR
+soft , binary mattes	partial scene segmentation	USED-FOR
+hypothesized object boundary fragments	mattes	USED-FOR
+contemporary methods	unsupervised object discovery	USED-FOR
+spectral clustering	approach	USED-FOR
+spectral clustering	image matting	USED-FOR
+image matting	approach	USED-FOR
+image matting	boundary detection	USED-FOR
+boundary detection	approach	USED-FOR
+It	unsupervised object discovery	USED-FOR
+dataset of scenes	It	USED-FOR
+Language resource quality	NLP	USED-FOR
+MT	NLP	USED-FOR
+MT	reference translations	USED-FOR
+reference translations	NLP	USED-FOR
+high-quality data	automatic evaluations	USED-FOR
+different-quality references	evaluation	USED-FOR
+automatic metrics	MT	USED-FOR
+full scale two-level morphological description	Turkish word structures	USED-FOR
+PC-KIMMO environment	description	USED-FOR
+root word lexicon	description	USED-FOR
+Turkish	agglutinative language	USED-FOR
+word structures	agglutinative language	USED-FOR
+productive affixations of derivational and inflectional suffixes	word structures	USED-FOR
+phonetic rules	surface realizations of morphological constructions	USED-FOR
+vowel harmony	phonetic rules	USED-FOR
+fundamental frequency -LRB- F0 -RRB- contour of speech	text-to-speech synthesis	USED-FOR
+text input	fundamental frequency -LRB- F0 -RRB- contour of speech	USED-FOR
+statistical model	speech F0 contours	USED-FOR
+Fujisaki model	statistical model	USED-FOR
+remarkable feature	model	USED-FOR
+algorithm	Fujisaki-model parameters	USED-FOR
+statistical methods	algorithm	USED-FOR
+raw F0 contours	Fujisaki-model parameters	USED-FOR
+text input	Fujisaki-model parameters	USED-FOR
+statistical learning	Fujisaki-model parameters	USED-FOR
+parameter training algorithm	model	USED-FOR
+decision tree-based context clustering	parameter training algorithm	USED-FOR
+method	evaluation of object detection cascades	USED-FOR
+divide-and-conquer procedure	method	USED-FOR
+space of candidate regions	divide-and-conquer procedure	USED-FOR
+exhaustive procedure	cascade evaluation	USED-FOR
+exhaustive procedure	method	USED-FOR
+method	search	USED-FOR
+subwindow search -LRB- ESS -RRB- procedure	method	USED-FOR
+method	cascade evaluation	USED-FOR
+method	branch-and-bound object detection	USED-FOR
+nonlinear quality functions	branch-and-bound object detection	USED-FOR
+kernel-ized support vector machines	nonlinear quality functions	USED-FOR
+PASCAL VOC 2006 dataset	method	USED-FOR
+PASCAL VOC 2006 dataset	cascade evaluation	USED-FOR
+cascade evaluation	method	USED-FOR
+Background modeling	vision systems	USED-FOR
+persistent dynamic behavior	scene	USED-FOR
+method	modeling and subtraction of such scenes	USED-FOR
+optical flow	modeling of the dynamic characteristics	USED-FOR
+optical flow	feature	USED-FOR
+feature	modeling of the dynamic characteristics	USED-FOR
+higher dimensional space	feature	USED-FOR
+ambiguities	computation of features	USED-FOR
+data-dependent bandwidth	ambiguities	USED-FOR
+data-dependent bandwidth	density estimation	USED-FOR
+kernels	density estimation	USED-FOR
+information extraction annotations	document retrieval for distillation	USED-FOR
+representation	three-dimensional objects	USED-FOR
+affine-invariant image patches	three-dimensional objects	USED-FOR
+spatial relationships	affine-invariant image patches	USED-FOR
+Multi-view constraints	normalized representation	USED-FOR
+Multi-view constraints	matching	USED-FOR
+Multi-view constraints	reconstruction	USED-FOR
+normalized representation	matching	USED-FOR
+normalized representation	reconstruction	USED-FOR
+matching	reconstruction	USED-FOR
+images	acquisition of true three-dimensional affine and Euclidean models	USED-FOR
+approach	cluttered scenes	USED-FOR
+Fast algorithms	nearest neighbor -LRB- NN -RRB- search	USED-FOR
+approach	1 distance	USED-FOR
+this	random-projection based methods	USED-FOR
+random-projection based methods	NN search	USED-FOR
+locality-sensitive hashing -LRB- LSH -RRB-	random-projection based methods	USED-FOR
+locality-sensitive hashing -LRB- LSH -RRB-	random projection trees	USED-FOR
+random projection trees	random-projection based methods	USED-FOR
+it	alternatives	USED-FOR
