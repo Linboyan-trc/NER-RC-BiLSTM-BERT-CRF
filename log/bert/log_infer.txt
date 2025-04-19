@@ -1,17 +1,17 @@
 ===== Evaluation on Test Set =====
-Precision: 0.5156
-Recall:    0.5818
-F1 Score:  0.5467
+Precision: 0.5596
+Recall:    0.6336
+F1 Score:  0.5943
                      precision    recall  f1-score   support
 
-            Generic       0.74      0.68      0.71       241
-           Material       0.46      0.55      0.50       157
-             Method       0.67      0.57      0.62       430
-             Metric       0.45      0.30      0.36        71
-OtherScientificTerm       0.43      0.55      0.48       519
-               Task       0.43      0.67      0.53       263
+            Generic       0.64      0.71      0.67       241
+           Material       0.59      0.63      0.61       157
+             Method       0.63      0.68      0.66       430
+             Metric       0.60      0.65      0.62        71
+OtherScientificTerm       0.49      0.57      0.53       519
+               Task       0.50      0.61      0.55       263
 
-          micro avg       0.52      0.58      0.55      1681
-          macro avg       0.53      0.55      0.53      1681
-       weighted avg       0.54      0.58      0.55      1681
+          micro avg       0.56      0.63      0.59      1681
+          macro avg       0.57      0.64      0.61      1681
+       weighted avg       0.56      0.63      0.60      1681
 
