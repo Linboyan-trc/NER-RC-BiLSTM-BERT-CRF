@@ -21,5 +21,5 @@
     3. 训练并进行实体抽取(不生成模型文件)
 
 ### Softmax完成关系分类任务
-- 源代码: `softmax_classification.py`
+- 源代码: `softmax_classification_model.py`
 - 源文件中包含对数据的处理
